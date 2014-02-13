@@ -83,7 +83,13 @@ hr.soften {
 
 /* Jumbotrons
 -------------------------------------------------- */
-
+/*new divs*/
+@font-face
+{
+font-family: ama;
+src: url('assets/css/fonts/ama.woff');
+}
+/*new divs ends*/
 /* Base class
 ------------------------- */
 .jumbotron {
