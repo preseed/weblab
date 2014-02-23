@@ -43,3 +43,6 @@ background-position:25% 75%;
   border-top-right-radius: 0;
 }
 #mc_embed_signup{margin:16px; clear:left; font:14px Helvetica,Arial,sans-serif; }
+mark {
+style="background-color:rgba(0,0,0,0.5);color:#FFFFFF";
+}
