@@ -21,7 +21,9 @@ h3 code {
   font-weight: normal;
 }
 
-
+.a2{
+  background-image: url('assets/images/nic.jpg')
+}
 /* Tweak navbar brand link to be super sleek
 -------------------------------------------------- */
 
