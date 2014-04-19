@@ -49,6 +49,9 @@ body {
   font-size: 13px;
   font-weight: normal;
 }
+.in{
+  display: inline;
+}
 
 /* Outline button for use within the docs */
 .btn-outline {
