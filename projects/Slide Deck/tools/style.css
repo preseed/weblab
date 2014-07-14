@@ -1,0 +1,160 @@
+/* Reset */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,dfn,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+
+html { 
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  	background-size: cover;
+}
+
+
+html,body{
+margin:0;
+padding:0;
+font-family: Helvetica Neue, Helvetica, Arial;
+color: #ffffff;
+height: 100%;
+
+
+}
+
+#transy{
+width: 100%;
+height: 100%;
+float: left;
+background: #08233e;
+opacity: 0.8;
+filter: alpha(opacity=80);
+position: absolute;
+z-index: -1;
+}
+
+#wrapper{
+width: 940px;
+margin: 0 auto;
+}
+
+.logo{
+width: 100%;/*940px*/
+float: left;
+margin-top: 30px;
+margin-bottom: 100px;
+}
+
+h1{
+margin-top: 7.44%;/*70px*/
+text-align: center;
+font-size: 60px;
+}
+
+.content{
+width: 100%;/*940px*/
+float: left;
+margin-top: 15.42%;/*145px*/
+}
+
+.content p{
+text-align: center;
+margin-top: 2.12%;/*20px*/
+}
+
+p.big_text{
+font-size: 27px;
+margin-bottom: 0.531%;/*5px*/
+margin-top: -5.31%;/*5px*/
+}
+.form{
+width: 51.59%;/*485px*/
+margin: 2.12% auto 0 auto;/*20px auto 0 auto*/
+}
+.field_content{
+background: url(../images/field.png) left top no-repeat;
+width: 485px;/*485px*/
+height: 54px;/*54px*/
+float: left;
+margin-top: 80px;/*80px*/
+}
+.field{
+width: 365px;/*365px*/
+outline: none;
+border: none;
+background: none;
+font-size: 20px;
+font-family: Helvetica Neue, Helvetica, Arial;
+font-weight: bold;
+color: #999999;
+height: 54px;/*54px*/
+float: left;
+padding-left: 20px;/*20px*/
+}
+
+.submit{
+width: 88px;/*88px*/
+height: 45px;/*45px*/
+float: left;
+margin: 5px 0 0 5px;/*5px 0 0 5px*/
+outline: none;
+border: none;
+background: url(../images/okay.png) left top no-repeat;
+cursor: pointer;
+}
+
+.submit:hover{
+background: url(../images/okay.png) left bottom no-repeat;
+}
+
+
+.clear{
+clear: left;
+clear: both;
+margin: 0;
+padding: 0;
+}
+
+}
+footer {
+  margin-top: 3.19%;/*30px*/
+  margin-bottom: 2.12%;/*20px*/
+}
+.button {
+   
+   background: transparent;
+   padding: 7px 14px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+  margin-left: 34%;
+  margin-top: 7%;
+   color: #9696E6;
+   font-size: 18px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   
+   }
+    .button:hover{
+      color: #9696E6;
+      border: #9696E6;
+    }
+   
+   .button a{
+    text-decoration: none;
+   }
+   a{
+    color: #9696E6;
+    text-decoration: none;
+   }
+  #alert {
+     border: 1px solid;
+     height: 20px;
+     width: 400px;
+     position: absolute;
+     left: 150px;
+     top: 40px;
+}
