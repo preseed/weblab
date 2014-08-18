@@ -6,7 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta HTTP-EQUIV="REFRESH" content="0; url=http://www.todoed.co/">
+    <meta HTTP-EQUIV="REFRESH" content="2; url=http://www.todoed.co/">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+	<style type="text/css">
+		.loading {
+		  display: inline-block;
+		  margin: 5em;
+		  border-width: 30px;
+		  border-radius: 50%;
+		  -webkit-animation: spin 1s linear infinite;
+		     -moz-animation: spin 1s linear infinite;
+		       -o-animation: spin 1s linear infinite;
+		          animation: spin 1s linear infinite;
+		  }
 
+		.style {
+		  border-style: double;
+		  border-color: #444 #fff #fff;
+		  }
+
+		@-webkit-keyframes spin {
+		  100% { -webkit-transform: rotate(359deg); }
+		  }
+
+		@-moz-keyframes spin {
+		  100% { -moz-transform: rotate(359deg); }
+		  }
+
+		@-o-keyframes spin {
+		  100% { -moz-transform: rotate(359deg); }
+		  }
+
+		@keyframes spin {
+		  100% {  transform: rotate(359deg); }
+		  }
+
+		/* Base styles */
+		html {
+		  background: #eee url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/billie_holiday.png');
+		  text-align: center;
+		  }
+			</style>
     </head>
+	
+	<body>
+		
+		<span class="loading style"></span>
+
+	</body>
+
+</html>
