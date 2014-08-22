@@ -69,14 +69,19 @@ width:20%;
 
 
 .hov {
-		background-image:url('med11.png');
-		width:16px;
-		height:16px;
+		background-image:url('me6.png');
 		background-repeat:no-repeat;
-		margin-top:8px;
-		
+		margin-left:6px;
+		margin-right:6px;
+        margin-top: 9px;
 		background-position:center;
 }
+.hov:hover {
+		background-image:url('med11.png');
+		background-repeat:no-repeat;
+		
+		
+		}
 /*ends*/
 
 
