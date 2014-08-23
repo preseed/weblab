@@ -24,9 +24,16 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+    <style type="text/css">
+      #text-area:focus{
+        -webkit-box-shadow: 0 0 15px #fff;
+        box-shadow: 0 0 15px #fff;
+      }
+    </style>
   </head>
 
-  <body style="background-image:url('images/web.png');">
+  <body style="background-image:url('images/web.png');background-attachment:fixed;">
 
     <div class="container">
 
@@ -49,7 +56,7 @@
      <form action="http://preseed.us3.list-manage2.com/subscribe/post?u=6d760d307e7d9e29e2344532b&amp;id=3d086da732" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-search" target="_blank" novalidate>
           <div class="input-group">
             <div class="in">
-		  <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="I want an Id too, here is my email" required>
+		  <input type="email" id="text-area" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Enter Email Address" required style="text-align:center;outline:none;border-radius:0;border:none;max-width:250px;display:block;margin-bottom:15px;">
               
             
 			   <button type="submit" class="btn btn-primary" id="mc-embedded-subscribe">Subscribe</button>
