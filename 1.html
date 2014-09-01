@@ -13,11 +13,14 @@
 	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
 	
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	 <link href="carousel.css" rel="stylesheet">
-	 <link href="fa/css/foaw.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+
+	<!-- <link href="fa/css/foaw.css" rel="stylesheet">
 	<link href="fa/css/foaw1.css" rel="stylesheet">
-	
+
+  
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -30,7 +33,28 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="assets/ico/favicon.png">
-  
+  <style>
+     body{
+      background: url(http://subtlepatterns.com/patterns/gray_sand.png);
+     }
+    .thumbnail{
+    background-color: transparent;
+    border: 50px;
+    border-color: #000000;    
+    padding: 10px 10px 10px 10px;  
+        display:block;
+        margin-left:auto;
+        margin-right:auto;}
+    }
+      .modal{
+      display:block;
+        margin-left:auto;
+        margin-right:auto;}
+   footer a{
+    color: #0088cc;
+    }
+    
+    </style>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
@@ -38,58 +62,97 @@
 
 <body bgcolor ='0504A4B'>
 
-   <div class="navbar-wrapper">
-      <div class="container">
-
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-			     <a class="nav navbar-nav navbar-left"><img src="og1.png" style="padding-top:10px"></a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <!-- <li ><a href="http://preseed.in" >Home</a></li> -->
-                <li><a href="http://weblab.preseed.in">Web Lab</a></li>
-		<li><a href="http://anythinglab.preseed.in">Anything Lab</a></li>
-		<!-- <li><a href="http://patron.preseed.in">Patron</a></li> -->
-                <!--<li><a href="http://ecell.preseed.in">E-Cell</a></li>-->
-                 <!--<li><a href="http://anythinglab.preseed.in/projects/4consult/">4Consult</a></li>-->
-				  <!-- <li><a href="http://preseed.in/#Media-Network">Media Network</a></li> -->
-			<li ><a href="https://medium.com/@Nishchal/collections" title="Medium" class="hov" target="_blank" style="margin-left:20px;font-size:16px" ></a></li>
-			<li><a href="http://blog.preseed.in"><i class="fa fa-tumblr fa-inverse" style="font-size:16px;margin-left:6px"></i></a></li>
-			<li><a href="http://www.facebook.com/thepreseed"><i class="fa fa-facebook fa-inverse" style="font-size:16px"></i></a></li>
-			<li><a href="http://twitter.com/thepreseed"><i class="fa fa-twitter fa-inverse" style="font-size:16px; margin-right:8px"></i></a></li>
-
-
-			
-              </ul>
-              
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-<div class="container">
+<div class="container" style="width:95%;max-width:1250px;margin:0 auto;text-align:center;">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<div class="spaces"></div>
-			<br><br>
-			<center><img src="http://weblab.preseed.in/img/pwl1%20_small.png" ></center>
+			
+			<center><img src="img/pwl1%20_small.png" style="max-width:100%;height:auto;" ></center>
 			<div class="spaces"></div>
 			<p class="text-center lead" style="color:white">
-				This is a collection of <a href="http://weblab.preseed.in" target="_blank">Preseed Web Lab</a> products for entrepreneurs<br>and aspiring entrepreneurs.<br><br>Get notified on the launch of our such products
+				This is a collection of <a href="http://weblab.preseed.in" target="_blank">Preseed Web Lab</a> products for entrepreneurs<br>and aspiring entrepreneurs.<br><br>
+                </p>
+    </div>
+        </div>
+            <div class="row-fluid">
+     <ul class="thumbnails example-sites" style="padding:0;text-align:center;">
+
+            <li class="span4" style="display:inline-block;" >
+          <a href="#todoed" data-toggle="modal" class="thumbnail"><img class="img-responsive" src="img/todoed.png"></a>
+        </li>
+	<div class="modal fade" id="todoed" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Todoed</h4>
+      </div>
+      <div class="modal-body">
+          <br>
+        <p style="text-align:center"> Turn any text into a task with just one right click.<br>
+          <a href="https://medium.com/preseed-web-lab/project-todo-list-dd71f9ec0a01" target="_blank">Open it's Medium page</a></p>
+           <p style="text-align:center">Slide Deck - Coming Soon</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Awesome!</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <li class="span4" style="display:inline-block;">
+          <a href="#idealistr" data-toggle="modal" class="thumbnail"><img src="img/idealistr_lar.png"  class="img-responsive"></a>
+        </li>
+	<div class="modal fade" id="idealistr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Idealistr</h4>
+      </div>
+      <div class="modal-body">
+          <br>
+       <p style="text-align:center"> Let's think and build ideas together.<br>
+Connecting entrepreneur, inspired hackers, hustlers, designers, and early-adopters today to build profound teams and MVP tomorrow.<br>
+           <a href="https://medium.com/preseed-web-lab/project-idea-list-7bf72a445748" target="_blank">Open it's Medium page</a></p>
+           <p style="text-align:center">Slide Deck - Coming Soon</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Nice!</button>
+      </div>
+    </div>
+  </div>
+</div>      
+         <li class="span4" style="display:inline-block;">
+          <a href="#teambuild" data-toggle="modal" class="thumbnail"><img src="img/teambuild.png"  class="img-responsive"></a>
+        </li>
+	<div class="modal fade" id="teambuild" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Ourflock</h4>
+      </div>
+      <div class="modal-body">
+          <br>
+        <p style="text-align:center">Team page for the new age<br>
+Olark changed the way you made contact us page for your website, we are changing the way you make the team page.<br>
+          <a href="https://medium.com/preseed-web-lab/project-managehr-7da47cdc4793" target="_blank">Open it's Medium page</a></p>
+           <p style="text-align:center">Slide Deck - Coming Soon</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary"data-dismiss="modal" aria-hidden="true">Wow!</button>
+      </div>
+    </div>
+  </div>
+</div>              
+         </ul>       
+                
+                
+                </div>
+                <br>
+                
+                <p class="text-center lead" style="color:white">
+                Get notified on the launch of our such products
 			</p>
 			<div class="space"></div>
 					<center><a href="http://preseed.us8.list-manage2.com/subscribe?u=8d28ba8a8bc00bd59a96501f8&id=a70286829c" target="_blank"> <button type="button" class="btn btn-default">Subscribe</button></a></center>
@@ -100,6 +163,12 @@
             Read <a href="http://medium.com/preseed-web-lab/7d7c2878f241" target="_blank">this</a> note from our founder.
             </p>
             </div>
+         <br><br>
+         <footer>
+         <center><a href="http://preseed.in"><img src="og1.png" style="padding-top:10px"></a>
+             <br><br><br>
+         <a href="http://preseed.in/legal" target="_blank">Copyright © 2014 Preseed Ventures Pvt. Ltd. | All Rights Reserved</a> </center>
+         </footer>
 			<!-- <div class="row clearfix">
                   <div class="col-md-12 column">
                   	

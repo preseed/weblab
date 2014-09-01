@@ -504,7 +504,7 @@ h2 + .row {
 
 /* Example sites showcase */
 .example-sites {
-  xmargin-left: 20px;
+  margin-left: 20px;
 }
 .example-sites img {
   max-width: 100%;
@@ -1043,7 +1043,6 @@ a.color-change:hover {
     text-align: center;
   }
   .example-sites .thumbnail > img {
-    max-width: 270px;
   }
 
   /* Do our best to make tables work in narrow viewports */
