@@ -11,7 +11,7 @@ body {
 }
 
 .full {
-  background: url(../img/back.jpg) no-repeat center center fixed; 
+  background: url(../img/newback.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,6 +23,7 @@ body {
 	color:#fff;
 	background-color:#b84d45;
 	background-image:url(../img/2.jpg);
+	opacity:0.5;
 	padding:30px 0;
 	margin-top:30px
          }
