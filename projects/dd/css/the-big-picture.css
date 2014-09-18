@@ -16,13 +16,15 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width:100%;
+  height: auto;
 }
 .cta-mail{
 	color:#fff;
 	background-color:#b84d45;
 	background-image:url(../img/2.jpg);
-	padding:50px 0;
-	margin-top:50px
+	padding:30px 0;
+	margin-top:30px
          }
 .cta-mail h2{
 	margin-top:0
