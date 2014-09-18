@@ -39,3 +39,6 @@ body {
 		{margin-top:0;padding-top:60px}
 		.submit-box{margin-top:60px}
 		.submit-box h3{padding-top:0}
+hr.small {
+    max-width: 100px;
+}
