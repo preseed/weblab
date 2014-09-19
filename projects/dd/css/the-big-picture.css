@@ -19,7 +19,7 @@ body {
   width:100%;
   height: 100%;
 }
-.cta-mail{
+/*.cta-mail{
 	color:#fff;
 	background-color:#b84d45;
 	background-image:url(../img/2.jpg);
@@ -39,7 +39,7 @@ body {
 		.resources h2,.resources h3
 		{margin-top:0;padding-top:60px}
 		.submit-box{margin-top:60px}
-		.submit-box h3{padding-top:0}
+		.submit-box h3{padding-top:0} */
 hr.small {
     max-width: 100px;
 }
