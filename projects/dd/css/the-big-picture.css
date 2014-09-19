@@ -35,7 +35,13 @@ hr.small {
 #mc_embed_signup .small-meta {font-size: 11px;}
 #mc_embed_signup .nowrap {white-space:nowrap;}
 
-#mc_embed_signup .mc-field-group {clear:default;position:relative; width:50%; padding-bottom:3%; padding-left:25%; min-height:50px;}
+/*#mc_embed_signup .mc-field-group {clear:default;position:relative; width:50%; padding-bottom:3%; padding-left:25%; min-height:50px;}*/
+#mc_embed_signup .mc-field-group {  display: block;
+    width: 150px;
+    float: left;
+    margin: 2px 4px 6px 4px;
+    text-align: right;}
+
 #mc_embed_signup .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
 * html #mc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
 #mc_embed_signup .mc-field-group label {display:block; margin-bottom:3px;}
