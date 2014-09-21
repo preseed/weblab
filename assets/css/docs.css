@@ -190,7 +190,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 /* Masthead (docs home)
 ------------------------- */
 .masthead {
-  padding: 70px 0 80px;
+  padding: 70px 0 70px;
   margin-bottom: 0;
   color: #fff;
 }
@@ -922,7 +922,7 @@ a.color-change:hover {
   }
   /* Widen masthead and social buttons to fill body padding */
   .jumbotron {
-    margin-top: -20px; /* Offset bottom margin on .navbar */
+     /* Offset bottom margin on .navbar */
   }
   /* Adjust sidenav width */
   .bs-docs-sidenav {
