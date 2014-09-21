@@ -1,0 +1,35 @@
+#page-wrapper {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.container .nav-collapse {
+    z-index: 50;
+    background: #1a1a1a;
+}
+.row-fluid ul li {
+    max-width: 100%;
+    text-align: center;
+}
+/*.row-fluid ul .span3{
+	margin: 0 auto 20px;
+}*/
+
+.footer {
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.centerDiv {
+    width: 95%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.centerDiv iframe {
+    display: block !important;
+    margin: 0 auto !important;
+}

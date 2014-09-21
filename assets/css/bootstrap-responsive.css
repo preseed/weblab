@@ -110,9 +110,7 @@
     clear: both;
   }
   [class*="span"] {
-    float: left;
     min-height: 1px;
-    margin-left: 30px;
   }
   .container,
   .navbar-static-top .container,
@@ -460,9 +458,9 @@
     clear: both;
   }
   [class*="span"] {
-    float: left;
+    /*float: left;*/
     min-height: 1px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
   }
   .container,
   .navbar-static-top .container,
@@ -948,7 +946,7 @@
   }
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
-    padding: 5px;
+    /*padding: 5px;*/
   }
   .navbar .container {
     width: auto;

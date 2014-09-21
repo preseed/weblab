@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Preseed Web Lab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,14 @@
     <meta name="keyword" content="preseed, startup">
 
     <!-- Le styles -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
-	<link href="assets/css/icons.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-     <link href="carousel.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -24,618 +27,799 @@
     <!-- Le fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="assets/ico/Nfavicon.png">
-<style type="text/css"> .centerDiv { width: 25%; height:200px; margin: 0 auto;float:center;}
-#gc_button:hover {border-color: #5C5C5C;} </style>
-  </head>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/Nfavicon.png">
+    <style type="text/css">
+    /*.centerDiv {
+        width: 25%;
+        height: 200px;
+        margin: 0 auto;
+        float: center;
+    }*/
+    #gc_button:hover {
+        border-color: #5C5C5C;
+    }
+    </style>
+</head>
 
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
-  
-    <!-- Navbar
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <div id="page-wrapper">
+
+        <!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-inverse navbar-fixed-top" >
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="nav-collapse collapse">
-           
-            <ul class="nav" style="float:left;">
-				<a class="brand" href="http://preseed.in"><img src="Nnavbarlogo.png" title="Home" alt=""/></a> 
-   			</ul>
-			<ul class="nav" style="float:right;">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="nav-collapse collapse">
 
-				<li class=""><a href="http://preseed.in" >Home</a></li>
-				<li class="active"><a href="http://weblab.preseed.in">Web Lab</a></li>
-				<li class=""><a href="http://anythinglab.preseed.in">Anything Lab</a></li>
-				<li class=""><a href="http://patron.preseed.in">Patron</a></li>
-				<!--<li class=""><a href="http://ecell.preseed.in">E-Cell</a></li>-->
-				<li class=""><a href="http://preseed.in/media">Media Network</a></li>     
-				<li><a tittle="Medium" href="https://medium.com/@Nishchal/collections" class="hov" target="_blank" style="font-size:16px;margin-left:20px;"></a></li>
-				<li><a tittle="Tumblr" href="http://blog.preseed.in" target="_blank" data-icon="&#xe004;" style="font-size:16px;"></a></li>
-				<li><a title="Facebook" href="http://www.facebook.com/thepreseed" target="_blank" data-icon="&#xe002;" style="font-size:16px;"></a></li>
-				<li><a title="Twitter" href="http://twitter.com/thepreseed" target="_blank" data-icon="&#xe003;" style="font-size:16px;"></a></li>
-			
+                        <ul class="nav" style="float:left;">
+                            <a class="brand" href="http://preseed.in">
+                                <img src="Nnavbarlogo.png" title="Home" alt="" />
+                            </a>
+                        </ul>
+                        <ul class="nav" style="float:right;">
 
-			</ul>
+                            <li class=""><a href="http://preseed.in">Home</a>
+                            </li>
+                            <li class="active"><a href="http://weblab.preseed.in">Web Lab</a>
+                            </li>
+                            <li class=""><a href="http://anythinglab.preseed.in">Anything Lab</a>
+                            </li>
+                            <li class=""><a href="http://patron.preseed.in">Patron</a>
+                            </li>
+                            <!--<li class=""><a href="http://ecell.preseed.in">E-Cell</a></li>-->
+                            <li class=""><a href="http://preseed.in/media">Media Network</a>
+                            </li>
+                            <li>
+                                <a tittle="Medium" href="https://medium.com/@Nishchal/collections" class="hov" target="_blank" style="font-size:16px;"></a>
+                            </li>
+                            <li>
+                                <a tittle="Tumblr" href="http://blog.preseed.in" target="_blank" data-icon="&#xe004;" style="font-size:16px;"></a>
+                            </li>
+                            <li>
+                                <a title="Facebook" href="http://www.facebook.com/thepreseed" target="_blank" data-icon="&#xe002;" style="font-size:16px;margin-left:-3px;"></a>
+                            </li>
+                            <li>
+                                <a title="Twitter" href="http://twitter.com/thepreseed" target="_blank" data-icon="&#xe003;" style="font-size:16px;"></a>
+                            </li>
 
-          </div>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
 
 
-<div class="jumbotron masthead">
-  <div class="container">
-  <img src="weblab.png" alt="lab-logo" width="450">
+        <div class="jumbotron masthead">
+            <div class="container">
+                <img src="weblab.png" alt="lab-logo" width="450">
 
-  </div>
-</div>
+            </div>
+        </div>
 
-<div class="container">
-    <hr class="bs-docs-separator">
+        <div class="container">
+            <hr class="bs-docs-separator">
 
-  <div class="marketing">
-<br/><br/><br/>
-   <strong><h2 style="line-height:1.2em">This is about Preseed's own web product ideas getting translated to<br/> Minimum Viable Products.</font></strong>
-   	<br/>
-    <br/>
-	<em><h4>If you are an <span title="Those inspired hackers that are interested in building our products in exchange for the title of cofounder and substantial stake in that product with a will to drive that product into being a startup in itself." style="color:#f33c3c">inspired hacker, hustler, or a designer</span> who could build with us web/mobile <br/>products, dig this page and it's surrounding links very well.</h4></em>
-
-
-   <br/>
-
-    <hr class="bs-docs-separator">
-    <br/>
-    <br/>
-
-      <div class="row-fluid">
-
-
-
-<h2>Guiding Principle - <strong>Simplicity</strong></h2> <h4 class="lead">Simple enough to be spoken about in 1 line. Simple enough to be scaled out of proportion with a very small team.</h4>
-<p class="lead">It takes a certain <em>hippie like liberated</em> perspective to build businesses with simplicity as the guiding principle. That perspective leads us to two core values in our products -</p>
+            <div class="marketing">
+                <br/>
+                <br/>
+                <br/>
+                <strong>
+                    <h2 style="line-height:1.2em">This is about Preseed's own web product ideas getting translated to
+                        <br/>Minimum Viable Products.</font>
+                </strong>
+                <br/>
+                <br/>
+                <em>
+                    <h4>If you are an
+                        <span title="Those inspired hackers that are interested in building our products in exchange for the title of cofounder and substantial stake in that product with a will to drive that product into being a startup in itself." style="color:#f33c3c">inspired hacker, hustler, or a designer</span>who could build with us web/mobile
+                        <br/>products, dig this page and it's surrounding links very well.</h4>
+                </em>
 
 
-      </div>
-      
-    <br/>
+                <br/>
+
+                <hr class="bs-docs-separator">
+                <br/>
+                <br/>
+
+                <div class="row-fluid">
 
 
-    <div class="row-fluid">
-      
 
-        <div class="span6">
-        <img class="marketing-img" src="iphone.png">
-        <h2>Usability</h2>
-        <p>This is where we spend most of our time. We keep it to what's needed and where it's needed. Nothing that is not needed will ever find its way into our products. </p>
-          <p><small>Design is more important than engineering in the consumer web space. One of the problems we see in this space in India is not of that of engineering. In fact India produces strong engineers. It's a problem of design, for India seriously lacks consumer web 'design' sensibilities. The reason stands - lack of geeks here <em>marrying</em> some seriously cool people. We hope that someday we are able to teach that to India through our products.</small></p>
-
-  
-      </div>
-      <div class="span6">
-        <img class="marketing-img" src="lean.png">
-        <h2>Lean</h2>
-        <p>We take it a step further. Lean is how we <strong>Live</strong>, let alone build stuff. We <em>'build, measure, learn, repeat'</em> and never raise funds without setting it right.</p>
-
-        <p><small>Bootstrapping has its own entrepreneurial lessons that cannot be learnt without self experiencing it. We iterate, customer validate and reiterate. If we fail, we fail fast, we re-iterate even faster and all of that, at minimum cost implications. In short we make sure we customer validate the products before we look to move to the next steps of development. <em>Shit gets done in least amounts of not only money but also time.</em></small></p>
-        
-        
-      </div>
+                    <h2>Guiding Principle -
+                        <strong>Simplicity</strong>
+                    </h2>
+                    <h4 class="lead">Simple enough to be spoken about in 1 line. Simple enough to be scaled out of proportion with a very small team.</h4>
+                    <p class="lead">It takes a certain
+                        <em>hippie like liberated</em>perspective to build businesses with simplicity as the guiding principle. That perspective leads us to two core values in our products -</p>
 
 
-         </div>
-    
-    <div class="row-fluid">
-      
+                </div>
 
-       <div class="span6">
-       
- 
- <div class="alert">         
-  <p class="lead">"Usability and the utility, not the visual design, determine the success or failure of a web-app. Since the visitor of the page is the only person who clicks the mouse and therefore decides everything, user-centric design has become a standard approach for successful and profit-oriented web design. After all, if users can’t use a feature, it might as well not exist." - <strong>Vitaly Friedman</strong></p>
-    </div>
-  
-      </div>
-      <div class="span6">
-        
-         <div class="alert">         
-  <p class="lead">"If you are not embarrassed by the first version of your product, you’ve launched too late." - <strong>Reid Hoffman</strong></p>
-    </div>
-      </div>
+                <br/>
 
 
-         </div>
+                <div class="row-fluid">
 
-    
-         <br/>
 
-<hr class="soften">
-<div class="row span12">
-  
- <center><p class="lead" style="font-size:36px">MANAGEMENT TEAM</p></center>
+                    <div class="span6">
+                        <img class="marketing-img" src="iphone.png">
+                        <h2>Usability</h2>
+                        <p>This is where we spend most of our time. We keep it to what's needed and where it's needed. Nothing that is not needed will ever find its way into our products.</p>
+                        <p>
+                            <small>Design is more important than engineering in the consumer web space. One of the problems we see in this space in India is not of that of engineering. In fact India produces strong engineers. It's a problem of design, for India seriously lacks consumer web 'design' sensibilities. The reason stands - lack of geeks here
+                                <em>marrying</em>some seriously cool people. We hope that someday we are able to teach that to India through our products.</small>
+                        </p>
 
- <br/><br/>
-  <div class="span10">
- <h3>
- <center>
- <div class="span5"><a href="https://twitter.com/nishchal" target="_blank" style="font-size:20px">Nishchal</a></div>
- <!--<a href="https://twitter.com/harved" target="_blank">@abhishek</a>-->
- <div class="span4"><a href="https://twitter.com/truwebby" target="_blank" style="font-size:20px">Rahul</a></div>
- <div class="span3"></h3></div>
- </center>
- </div>
-<!--<div  class="span4"><h4><a href="https://twitter.com/truwebby" target="_blank">@truewebby</a></h4></div>
+
+                    </div>
+                    <div class="span6">
+                        <img class="marketing-img" src="lean.png">
+                        <h2>Lean</h2>
+                        <p>We take it a step further. Lean is how we
+                            <strong>Live</strong>, let alone build stuff. We
+                            <em>'build, measure, learn, repeat'</em>and never raise funds without setting it right.</p>
+
+                        <p>
+                            <small>Bootstrapping has its own entrepreneurial lessons that cannot be learnt without self experiencing it. We iterate, customer validate and reiterate. If we fail, we fail fast, we re-iterate even faster and all of that, at minimum cost implications. In short we make sure we customer validate the products before we look to move to the next steps of development.
+                                <em>Shit gets done in least amounts of not only money but also time.</em>
+                            </small>
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="row-fluid">
+
+
+                    <div class="span6">
+
+
+                        <div class="alert">
+                            <p class="lead">"Usability and the utility, not the visual design, determine the success or failure of a web-app. Since the visitor of the page is the only person who clicks the mouse and therefore decides everything, user-centric design has become a standard approach for successful and profit-oriented web design. After all, if users can’t use a feature, it might as well not exist." -
+                                <strong>Vitaly Friedman</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="span6">
+
+                        <div class="alert">
+                            <p class="lead">"If you are not embarrassed by the first version of your product, you’ve launched too late." -
+                                <strong>Reid Hoffman</strong>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <br/>
+
+                <hr class="soften">
+                <div class="row span12" style="margin:0 auto;">
+
+                    <center>
+                        <p class="lead" style="font-size:36px">MANAGEMENT TEAM</p>
+                    </center>
+
+                    <br/>
+                    <br/>
+                    <div class="span10" style="margin: 0 auto;text-align:center;">
+                        <h3>
+                            <center>
+                                <div class="span5"><a href="https://twitter.com/nishchal" target="_blank" style="font-size:20px">Nishchal Kesarwani</a>
+                                </div>
+                                <!--<a href="https://twitter.com/harved" target="_blank">@abhishek</a>-->
+                                <div class="span4"><a href="https://twitter.com/truwebby" target="_blank" style="font-size:20px">Rahul Srivastava</a>
+                                </div>
+                        </h3>
+                    </div>
+                    </center>
+                </div>
+                <!--<div  class="span4"><h4><a href="https://twitter.com/truwebby" target="_blank">@truewebby</a></h4></div>
 <h4><a href="https://twitter.com/saikiran" target="_blank">@saikiran</a></h4>-->
 
-<br/><br/>
- <div class="row-fluid">
-      
-
-       <div class="span12">
-       
-<!-- <img src="assets/images/design.png">  -->
-</br> 
- <div class="alert">  
-
-  <p class="lead" style="font-family:arial">We are looking to bring a manager to manage these product ideas full time. If you have any interest and skill to find and <br/>manage <span title="Those hackers that are interested in coding our products in exchange for the title of cofounder and substantial stake in that product with a will to drive that product into being a startup in itself." style="color:#5A5A5A">inspired hackers, hustlers, and designers</span> for our ideas,this may be the place for you.<br/> Read <a href="https://medium.com/p/12140bfbd113" target="_blank">here</a> for more and then apply <a href="https://docs.google.com/forms/d/1IkL_J_KBOsCkNBBh8Zla776iOScnSxjjQ9hKAXqFCbQ/viewform?usp=send_form" target="_blank">here</a> if you will.</p>
-
-    </div>
-  
-      </div>
-    </div>
-      
-      <div class="row-fluid">
-        <div class="span12">
-     <!--   <img src="assets/images/market.png"> -->
-        
-         <div class="alert">         
-  <p class="lead">We are also looking for a new age marketer in our team, if you are interested about this opening or are willing <br/>to learn, read more <a href="https://medium.com/preseed-web-lab/c68fd5dacc51" target="_blank">here</a>. If you understand, apply <a href="https://docs.google.com/forms/d/1e5ZdIDXtbqXSoo7FfRwxa9kUXpJ2x_StrHHLyx1j8ww/viewform" target="_blank">here.</a></p>
-    </div>
-      </div>
+                <br/>
+                <br/>
+                <div class="row-fluid">
 
 
-         </div>
+                    <div class="span12">
+
+                        <!-- <img src="assets/images/design.png">  -->
+                        </br>
+                        <div class="alert">
+
+                            <p class="lead" style="font-family:arial">We are looking to bring a manager to manage these product ideas full time. If you have any interest and skill to find and
+                                <br/>manage
+                                <span title="Those hackers that are interested in coding our products in exchange for the title of cofounder and substantial stake in that product with a will to drive that product into being a startup in itself." style="color:#5A5A5A">inspired hackers, hustlers, and designers</span>for our ideas,this may be the place for you.
+                                <br/>Read <a href="https://medium.com/p/12140bfbd113" target="_blank">here</a> for more and then apply <a href="https://docs.google.com/forms/d/1IkL_J_KBOsCkNBBh8Zla776iOScnSxjjQ9hKAXqFCbQ/viewform?usp=send_form" target="_blank">here</a> if you will.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="span12">
+                        <!--   <img src="assets/images/market.png"> -->
+
+                        <div class="alert">
+                            <p class="lead">We are also looking for a new age marketer in our team, if you are interested about this opening or are willing
+                                <br/>to learn, read more <a href="https://medium.com/preseed-web-lab/c68fd5dacc51" target="_blank">here</a>. If you understand, apply <a href="https://docs.google.com/forms/d/1e5ZdIDXtbqXSoo7FfRwxa9kUXpJ2x_StrHHLyx1j8ww/viewform" target="_blank">here.</a>
+                            </p>
+                        </div>
+                    </div>
 
 
-    
+                </div>
 
 
 
 
-<!--
+
+
+
+                <!--
 
 Below Nishchals name/ twitter handle add PWL manager requirements <We are looking to bring a manager to manage these product ideas full time. If you have any interest and skill to find and manage <*inspired hackers, hustlers and designers> for our ideas, this may be the place for you. Read here <https://medium.com/p/12140bfbd113> for more and then apply here if you will. <apply here hyperlinked to> <*mouse hover should explain inspired hackers -: Those hackers that are interested in coding our products in exchange for the title of cofounder and substantial stake in that product with a will to drive that product into being a startup in itself.>-->
 
-    <hr class="soften">
+                <hr class="soften">
 
-    <p class="lead" style="font-size:48px">In the laboratory</p>
-    <p class="marketing-byline">These are the ideas and products that are still in the cooking stage. The stuff that keeps us up at nights.<br/>
-   
-    <br/><br/>
-                
-    </p>
- 
-  </div>
-  
-    <div class="row-fluid">
-    
-      <ul class="thumbnails example-sites">
-       
-      <li class="span3">
-          <a href="#webid" data-toggle="modal" class="thumbnail"><h2><strong>Web ID</strong></h2></a>
-        </li>
-	
-        
-          <div id="webid" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel5">Web Identity</h3>
-  </div>
-  <div class="modal-body">
-    <p>A product simpler than <a href="http://about.me" target="_blank">About.me</a>
-    </p>
-    <p>When two people exchange personal contact information, more should happen at that instance on your mobile phones and its web interface, with lesser taps, touches and clicks, automatically and simply.</p>
+                <p class="lead" style="font-size:48px">In the laboratory</p>
+                <p class="marketing-byline">These are the ideas and products that are still in the cooking stage. The stuff that keeps us up at nights.
+                    <br/>
 
-<p>That thought in our minds have triggered a whole gamut of research and solution design for this idea.</p>
+                    <br/>
+                    <br/>
+
+                </p>
+
+            </div>
+
+            <div class="row-fluid">
+
+                <ul class="thumbnails example-sites">
+
+                    <li class="span3">
+                        <a href="#webid" data-toggle="modal" class="thumbnail">
+                            <h2>
+                                <strong>Web ID</strong>
+                            </h2>
+                        </a>
+                    </li>
 
 
-<p>We are looking for 1 person with prior experience of having built mobile apps and is keen on assisting us on whatever we need him to assist us on. For now all we can offer this person is a chance to be a part of the team that is building this app</p>
-  <p style="text-align:center"><a href="http://weblab.preseed.in/projects/webid" target="_blank">Open it's web page</a></p> 
-  </div>
+                    <div id="webid" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel5">Web Identity</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>A product simpler than <a href="http://about.me" target="_blank">About.me</a>
+                            </p>
+                            <p>When two people exchange personal contact information, more should happen at that instance on your mobile phones and its web interface, with lesser taps, touches and clicks, automatically and simply.</p>
 
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Cool</button>
-  </div>
-</div>
-
-      <li class="span3">
-          <a href="#news" data-toggle="modal" class="thumbnail"><h2><strong>Headlines</strong></h2></a>
-        </li>
-        
-          <div id="news" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel6">Headlines Now</h3>
-  </div>
-  <div class="modal-body">
-   
-  <p><strong>Our 2 seconds pitch for you:</strong> <em>We are building a new way to skim through your daily newspaper. Blazing fast.</em></p>
-
-    <p><small>Even in this day and age, majority of consumers get their daily fix of news through the newspaper dropped at the door. And with so many 'Social' news readers available, comes so much 'Social' noise. An interesting article here, a viral cat video there.</small></p>
-  <p><strong>We plan to change all that. Soon.</strong></p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
-  </div>
-</div>
-      <li class="span3">
-          <a href="#store" data-toggle="modal" class="thumbnail"><h2><strong>Store</strong></h2></a>
-        </li>
-        
-       <div id="store" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel3">Really cool products at your doorsteps</h3>
-  </div>
-  <div class="modal-body">
-    <p> Global e-commerce of products that are designed well both aesthetically and functionally.
-    <br/>
-    What's your opinion on <a href="http://uncrate.com/stuff/ploom-pax-vaporizer/" target="_blank">This</a> or <a href="http://formlabs.com" target="_blank">this here</a> or <a href="http://coolmaterial.com/home/headlock-self-closing-guitar-wall-hanger/" target="_blank">Even this</a>. Like them? How about buy them? Delivered to your doorstep. This is just the start.
-    <hr/>
-We need a supremely talented hacker and a supremely talented designer to help us build this prototype.</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Stop Tempting!</button>
-  </div>
-</div>
-
-        
-          <li class="span3 prototyped">
-          <a href="#todo" data-toggle="modal" class="color-change"><h2><strong>ToDo List</strong></h2></a>
-          </li>
-       <div id="todo" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel4">Collaborative ToDo List</h3>
-  </div>
-  <div class="modal-body">
-    <p>The world's easiest way to add instantly to your or your coworkers' to-do lists.
-    <hr/>
-If you are a small team/ startup working in a casual setting of emails and chats. This product will increase your productivity.<br/><br/>
-<p style="text-align:center"><a href="http://weblab.preseed.in/projects/todoed" target="_blank">Open it's web page</a></p> 
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-success" data-dismiss="modal" aria-hidden="true">Oh Sweet</button>
-  </div>
-</div>     
-      </ul>
-
-	  <ul class="thumbnails example-sites">
-           
-        <li class="span3">
-          <a href="#neophile" data-toggle="modal" class="thumbnail"><h2><strong>Neophile</strong></h2></a>
-         
-        </li>
-        
-          <div id="neophile" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">A directory of talented people and such worthy projects</h3>
-  </div>
-  <div class="modal-body">
-    <p> Honestly, the first goal of this product is to give us access to talented people in India. In the process we hope to solve the same problem for many by constantly creating well selected directory of talented people in India for matching them to projects and people worthy of their time.
-	    <hr/>
-	    If you are just curious for being a part of a neophilic network. Sign up <a href="http://weblab.preseed.in/projects/neophile" target="_blank">Here</a>
-    </p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
-  </div>
-</div>
-
-    
-            <li class="span3">
-                   <a href="#learn" data-toggle="modal" class="thumbnail"><h2><strong>Educate</strong></h2></a>
-        </li>
-                   
-                          <div id="learn" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel2">Education Disruptor</h3>
-  </div>
-  <div class="modal-body">
-    <p>We feel that there are two spots on the web that are absolutely ripe for disruption -
-<br/><br/>
-<strong>Big Data</strong><br/>
-For there is too much data on the web and it's growing by the second.<br/><small>(Lets ignore this for now)</small>
-<br/><br/>
-<strong>Education</strong><br/>
-An experience of Education consumption the way we consume infotainment sitting on Facebook, sometimes all day, with such keen interest over random feeds.This is one concept thats been haunting us for a while. For every user on Facebook is also an education consumer. If you already know what we mean, come and join us to form our R&D team to soon freeze the concept.<br/><small> (A platform which will curate and distribute content in structures inspired from existing school course structures, for a reason ofcourse).</small>
-</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Awesome</button>
-  </div>
-</div>
-         
-         
-         <li class="span3">
-          <a href="#eventapp" data-toggle="modal" class="thumbnail"><h2><strong>Today's events</strong></h2></a>
-          </li>
-       <div id="eventapp" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel7" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel7">What to do Today</h3>
-  </div>
-  <div class="modal-body">
-    <p>Ever wondered what to do today? Decide and share instantly by knowing what's happening around you. Simple No-Nonsense app that presents today's events around you based on your location.
-    <hr/>
-Work is underway. But we could use talented app devs/designers to accelerate the production time</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-success" data-dismiss="modal" aria-hidden="true">Very nice!</button>
-  </div>
-</div>
+                            <p>That thought in our minds have triggered a whole gamut of research and solution design for this idea.</p>
 
 
-     <li class="span3">
-          <a href="#slidedeck" data-toggle="modal" class="thumbnail"><h2><strong>Startup Slides</strong></h2></a>
-          </li>
-         <div id="slidedeck" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Startup Slides</h3>
-  </div>
-  <div class="modal-body">
-<p>An evolving, social  and collaborative Startup Slide Deck.</p>
-  </div>
-  <p style="text-align:center"><a href="http://weblab.preseed.in/projects/slidedeck/" target="_blank">Open it's webpage.</a></p> 
- 
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
-  </div>
-</div>
-      
-      </ul>
-	   <ul class="thumbnails example-sites">
-	   
+                            <p>We are looking for 1 person with prior experience of having built mobile apps and is keen on assisting us on whatever we need him to assist us on. For now all we can offer this person is a chance to be a part of the team that is building this app</p>
+                            <p style="text-align:center"><a href="http://weblab.preseed.in/projects/webid" target="_blank">Open it's web page</a>
+                            </p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Cool</button>
+                        </div>
+                    </div>
+
+                    <li class="span3">
+                        <a href="#news" data-toggle="modal" class="thumbnail">
+                            <h2>
+                                <strong>Headlines</strong>
+                            </h2>
+                        </a>
+                    </li>
+
+                    <div id="news" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel6">Headlines Now</h3>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                                <strong>Our 2 seconds pitch for you:</strong>
+                                <em>We are building a new way to skim through your daily newspaper. Blazing fast.</em>
+                            </p>
+
+                            <p>
+                                <small>Even in this day and age, majority of consumers get their daily fix of news through the newspaper dropped at the door. And with so many 'Social' news readers available, comes so much 'Social' noise. An interesting article here, a viral cat video there.</small>
+                            </p>
+                            <p>
+                                <strong>We plan to change all that. Soon.</strong>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
+                        </div>
+                    </div>
+                    <li class="span3">
+                        <a href="#store" data-toggle="modal" class="thumbnail">
+                            <h2>
+                                <strong>Store</strong>
+                            </h2>
+                        </a>
+                    </li>
+
+                    <div id="store" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel3">Really cool products at your doorsteps</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>Global e-commerce of products that are designed well both aesthetically and functionally.
+                                <br/>What's your opinion on <a href="http://uncrate.com/stuff/ploom-pax-vaporizer/" target="_blank">This</a> or <a href="http://formlabs.com" target="_blank">this here</a> or <a href="http://coolmaterial.com/home/headlock-self-closing-guitar-wall-hanger/" target="_blank">Even this</a>. Like them? How about buy them? Delivered to your doorstep. This is just the start.
+                                <hr/>We need a supremely talented hacker and a supremely talented designer to help us build this prototype.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Stop Tempting!</button>
+                        </div>
+                    </div>
+
+
+                    <li class="span3 prototyped">
+                        <a href="#todo" data-toggle="modal" class="color-change">
+                            <h2>
+                                <strong>ToDo List</strong>
+                            </h2>
+                        </a>
+                    </li>
+                    <div id="todo" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel4">Collaborative ToDo List</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>The world's easiest way to add instantly to your or your coworkers' to-do lists.
+                                <hr/>If you are a small team/ startup working in a casual setting of emails and chats. This product will increase your productivity.
+                                <br/>
+                                <br/>
+                                <p style="text-align:center"><a href="http://weblab.preseed.in/projects/todoed" target="_blank">Open it's web page</a>
+                                </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-success" data-dismiss="modal" aria-hidden="true">Oh Sweet</button>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="thumbnails example-sites">
+
+                    <li class="span3">
+                        <a href="#neophile" data-toggle="modal" class="thumbnail">
+                            <h2>
+                                <strong>Neophile</strong>
+                            </h2>
+                        </a>
+
+                    </li>
+
+                    <div id="neophile" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel">A directory of talented people and such worthy projects</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>Honestly, the first goal of this product is to give us access to talented people in India. In the process we hope to solve the same problem for many by constantly creating well selected directory of talented people in India for matching them to projects and people worthy of their time.
+                                <hr/>If you are just curious for being a part of a neophilic network. Sign up <a href="http://weblab.preseed.in/projects/neophile" target="_blank">Here</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
+                        </div>
+                    </div>
+
+
+                    <li class="span3">
+                        <a href="#learn" data-toggle="modal" class="thumbnail">
+                            <h2>
+                                <strong>Educate</strong>
+                            </h2>
+                        </a>
+                    </li>
+
+                    <div id="learn" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel2">Education Disruptor</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>We feel that there are two spots on the web that are absolutely ripe for disruption -
+                                <br/>
+                                <br/>
+                                <strong>Big Data</strong>
+                                <br/>For there is too much data on the web and it's growing by the second.
+                                <br/>
+                                <small>(Lets ignore this for now)</small>
+                                <br/>
+                                <br/>
+                                <strong>Education</strong>
+                                <br/>An experience of Education consumption the way we consume infotainment sitting on Facebook, sometimes all day, with such keen interest over random feeds.This is one concept thats been haunting us for a while. For every user on Facebook is also an education consumer. If you already know what we mean, come and join us to form our R&D team to soon freeze the concept.
+                                <br/>
+                                <small>(A platform which will curate and distribute content in structures inspired from existing school course structures, for a reason ofcourse).</small>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Awesome</button>
+                        </div>
+                    </div>
+
+
+                    <li class="span3">
+                        <a href="#eventapp" data-toggle="modal" class="thumbnail">
+                            <h2>
+                                <strong>Today's events</strong>
+                            </h2>
+                        </a>
+                    </li>
+                    <div id="eventapp" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel7" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel7">What to do Today</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>Ever wondered what to do today? Decide and share instantly by knowing what's happening around you. Simple No-Nonsense app that presents today's events around you based on your location.
+                                <hr/>Work is underway. But we could use talented app devs/designers to accelerate the production time</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-success" data-dismiss="modal" aria-hidden="true">Very nice!</button>
+                        </div>
+                    </div>
+
+
+                    <li class="span3">
+                        <a href="#slidedeck" data-toggle="modal" class="thumbnail">
+                            <h2>
+                                <strong>Startup Slides</strong>
+                            </h2>
+                        </a>
+                    </li>
+                    <div id="slidedeck" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel">Startup Slides</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>An evolving, social and collaborative Startup Slide Deck.</p>
+                        </div>
+                        <p style="text-align:center"><a href="http://weblab.preseed.in/projects/slidedeck/" target="_blank">Open it's webpage.</a>
+                        </p>
+
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
+                        </div>
+                    </div>
+
+                </ul>
+                <ul class="thumbnails example-sites">
 
 
 
-	<li class="span3">
-          <a href="#tws" data-toggle="modal" class="thumbnail"><h2><strong>Tweeted Humour</strong></h2></a>
-         
-        </li>
-        
-          <div id="tws" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Tweeted Humour</h3>
-  </div>
-  <div class="modal-body">
-<p>Mobile application for Tweeted Humour</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
-  </div>
-</div>
-	
-         
-<li class="span3 prototyped">
-          <a href="#gc" data-toggle="modal"  id="gc_button" class="thumbnail color-change" style="color:#979797"><h2><strong>Ground Crew</strong></h2></a>
-         
-        </li>
-        
-          <div id="gc" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Ground Crew</h3>
-  </div>
-  <div class="modal-body">
-<p>Aviation Industry app which focuses on Ground Crew rather than Customers.</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
-  </div>
-</div>
 
-<li class="span3 prototyped">
-          <a href="#tl" data-toggle="modal" class="thumbnail color-change"><h2><strong>Manage HR</strong></h2></a>
-         
-        </li>
-        
-          <div id="tl" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Manage HR</h3>
-  </div>
-  <div class="modal-body">
-<p>A tool to list team on website like olark contact us widget, that allows anyone with a website to list their teams. It could in future evolve into a HR product for companies.</p>
-<p stylr="text-align:center"><a href="http://weblab.preseed.in/projects/teambuild" target="_blank">Open it's web page</a></p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
-  </div>
-</div>
+                    <li class="span3">
+                        <a href="#tws" data-toggle="modal" class="thumbnail">
+                            <h2>
+                                <strong>Tweeted Humour</strong>
+                            </h2>
+                        </a>
 
-<li class="span3">
-          <a href="#catering" data-toggle="modal" class="thumbnail"><h2><strong>Event Catering</strong></h2></a>
-         
-        </li>
-        
-          <div id="catering" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Event Catering</h3>
-  </div>
-  <div class="modal-body">
-<p>We bring the favourite dishes from your city, to your guests, in our style.</p>
-<p style="text-align:center;"><a href="http://php-ucfnew.rhcloud.com" target="_blank">Open it's web page.</a></p>
+                    </li>
 
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Wow!</button>
-  </div>
-</div>
-</ul>
+                    <div id="tws" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel">Tweeted Humour</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>Mobile application for Tweeted Humour</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
+                        </div>
+                    </div>
 
-   <ul class="thumbnails example-sites">
-       
-      <li class="span3 prototyped">
-          <a href="#ideal" data-toggle="modal" class="thumbnail color-change"><h2><strong>Idea List</strong></h2></a>
-        </li>
-  
-        
-          <div id="ideal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel5">Idea List</h3>
-  </div>
-  <div class="modal-body">
-    <p>A network of hackers, designers, hustlers, and early adopters; all who aim to build mvps.</p>
-    <p><a href="http://weblab.preseed.in/projects/idealistr/" target="_blank">Open it's web page.</a></p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Cool</button>
-  </div>
-</div>
 
-<li class="span3 prototyped">
-          <a href="#honey" data-toggle="modal" class="thumbnail color-change"><h2><strong>Pure Honey</strong></h2></a>
-</li>
-  
-        
-  <div id="honey" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel20" aria-hidden="true">
-	<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-		<h3 id="myModalLabel20">Pure Honey</h3>
-	</div>
-	<div class="modal-body">
-    <p>Simple e-store for pure honey.</p>
-   
-    <p style="text-align:center"><a href="http://knowyourhoney.strikingly.com/" target="_blank">Open it's webpage.</a></p>
-    
-	</div>
-	<div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Nice!</button>
-	</div>
-</div>
+                    <li class="span3 prototyped">
+                        <a href="#gc" data-toggle="modal" id="gc_button" class="thumbnail color-change" style="color:#979797">
+                            <h2>
+                                <strong>Ground Crew</strong>
+                            </h2>
+                        </a>
 
-<li class="span3">
-          <a href="#fmcg" data-toggle="modal" class="thumbnail"><h2><strong>FMCG Delivery</strong></h2></a>
-         
-        </li>
-        
-          <div id="fmcg" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">FMCG Delivery</h3>
-  </div>
-  <div class="modal-body">
-<p>We wish to be that layer between the restaurants/offices and their daily supplies.</p>
-<p stylr="text-align:center"><a href="https://medium.com/@Nishchal/discounted-delivery-f0811355304f" target="_blank">Open it's medium page</a></p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
-  </div>
-</div>
-</ul>
- <p class="marketing-byline"style="text-align:center;font-family:arial;font-size:150%;color:#979797;line-height:150%">
- </br>Stay updated!</br>
- We are constantly working to launch the first versions of our ideas.
- </br>Sign up for our mailing list to stay informed. But there is 
- <a href="#more" data-toggle="modal" class=""><strong>something more meaningful*</strong></a>
- then just staying informed that will happen if you subscribe to our mailing list.</br></br></br>
- <a href="http://preseed.us3.list-manage.com/subscribe?u=6d760d307e7d9e29e2344532b&id=77faa83957" class="btn btn-info btn-small" target="_blank" style="box-shadow:none;"><strong style="font-size:20px; font-family:arial;" >SUBSCRIBE</strong></a>
- </p>
-<br/><br/>
-<div id="more" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel33" aria-hidden="true">
-	<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-		<h3 id="myModalLabel33">For Early Adopters</h3>
-	</div>
-	<div class="modal-body">
-		<p>Dear Early Adopters,
-		</br></br>The people building upon these ideas are our Indian brothers and sisters who have the will and skill to build great startups perhaps. They need you to see what they are building. This act of yours could change their lives.</p>
-		<p><a href="https://medium.com/@Nishchal/to-preseed-projects-early-adopters-673e2f36b5c" target="_blank">Read More.</a></p>
+                    </li>
+
+                    <div id="gc" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel">Ground Crew</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>Aviation Industry app which focuses on Ground Crew rather than Customers.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
+                        </div>
+                    </div>
+
+                    <li class="span3 prototyped">
+                        <a href="#tl" data-toggle="modal" class="thumbnail color-change">
+                            <h2>
+                                <strong>Manage HR</strong>
+                            </h2>
+                        </a>
+
+                    </li>
+
+                    <div id="tl" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel">Manage HR</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>A tool to list team on website like olark contact us widget, that allows anyone with a website to list their teams. It could in future evolve into a HR product for companies.</p>
+                            <p stylr="text-align:center"><a href="http://weblab.preseed.in/projects/teambuild" target="_blank">Open it's web page</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
+                        </div>
+                    </div>
+
+                    <li class="span3">
+                        <a href="#catering" data-toggle="modal" class="thumbnail">
+                            <h2>
+                                <strong>Event Catering</strong>
+                            </h2>
+                        </a>
+
+                    </li>
+
+                    <div id="catering" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel">Event Catering</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>We bring the favourite dishes from your city, to your guests, in our style.</p>
+                            <p style="text-align:center;"><a href="http://php-ucfnew.rhcloud.com" target="_blank">Open it's web page.</a>
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Wow!</button>
+                        </div>
+                    </div>
+                </ul>
+
+                <ul class="thumbnails example-sites">
+
+                    <li class="span3 prototyped">
+                        <a href="#ideal" data-toggle="modal" class="thumbnail color-change">
+                            <h2>
+                                <strong>Idea List</strong>
+                            </h2>
+                        </a>
+                    </li>
+
+
+                    <div id="ideal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel5">Idea List</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>A network of hackers, designers, hustlers, and early adopters; all who aim to build mvps.</p>
+                            <p><a href="http://weblab.preseed.in/projects/idealistr/" target="_blank">Open it's web page.</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Cool</button>
+                        </div>
+                    </div>
+
+                    <li class="span3 prototyped">
+                        <a href="#honey" data-toggle="modal" class="thumbnail color-change">
+                            <h2>
+                                <strong>Pure Honey</strong>
+                            </h2>
+                        </a>
+                    </li>
+
+
+                    <div id="honey" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel20" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel20">Pure Honey</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>Simple e-store for pure honey.</p>
+
+                            <p style="text-align:center"><a href="http://knowyourhoney.strikingly.com/" target="_blank">Open it's webpage.</a>
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Nice!</button>
+                        </div>
+                    </div>
+
+                    <li class="span3">
+                        <a href="#fmcg" data-toggle="modal" class="thumbnail">
+                            <h2>
+                                <strong>FMCG Delivery</strong>
+                            </h2>
+                        </a>
+
+                    </li>
+
+                    <div id="fmcg" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel">FMCG Delivery</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>We wish to be that layer between the restaurants/offices and their daily supplies.</p>
+                            <p stylr="text-align:center"><a href="https://medium.com/@Nishchal/discounted-delivery-f0811355304f" target="_blank">Open it's medium page</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
+                        </div>
+                    </div>
+                </ul>
+                <p class="marketing-byline" style="text-align:center;font-family:arial;font-size:150%;color:#979797;line-height:150%">
+                    </br>Stay updated!</br>
+                    We are constantly working to launch the first versions of our ideas.
+                    </br>Sign up for our mailing list to stay informed. But there is
+                    <a href="#more" data-toggle="modal" class="">
+                        <strong>something more meaningful*</strong>
+                    </a>
+                    then just staying informed that will happen if you subscribe to our mailing list.</br>
+                    </br>
+                    </br>
+                    <a href="http://preseed.us3.list-manage.com/subscribe?u=6d760d307e7d9e29e2344532b&id=77faa83957" class="btn btn-info btn-small" target="_blank" style="box-shadow:none;">
+                        <strong style="font-size:20px; font-family:arial;">SUBSCRIBE</strong>
+                    </a>
+                </p>
+                <br/>
+                <br/>
+                <div id="more" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel33" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel33">For Early Adopters</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>Dear Early Adopters,
+                            </br>
+                            </br>The people building upon these ideas are our Indian brothers and sisters who have the will and skill to build great startups perhaps. They need you to see what they are building. This act of yours could change their lives.</p>
+                        <p><a href="https://medium.com/@Nishchal/to-preseed-projects-early-adopters-673e2f36b5c" target="_blank">Read More.</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Nice!</button>
+                    </div>
+                </div>
+                <hr class="soften">
+                <center>
+                    <p class="lead" style="font-size:36px;font-family:arial">PRODUCT DEVELOPMENT TEAM</p>
+                </center>
+                <br/>
+                <br/>
+                <br/>
+                <center>
+                    <div class="span4">
+                        <h3><a href="https://angel.co/saikiran-daripelli" target="-blank" style="font-size:20px;font-family:arial">Saikiran Daripelli</a>
+                        </h3>
+                    </div>
+                    <div class="span4">
+                        <h3><a href="https://twitter.com/17haval" target="-blank" style="font-size:20px;font-family:arial">Dhaval Chauhan</a>
+                        </h3>
+                    </div>
+                    <!--<div class="span3"><h3><a href="https://twitter.com/naresh_sennam" target="-blank" style="font-size:20px;font-family:arial">naresh</a></h3></div>-->
+                    <div class="span4">
+                        <h3><a href="https://twitter.com/sahildua2305" target="-blank" style="font-size:20px;font-family:arial">Sahil Dua</a>
+                        </h3>
+                    </div>
+
+                </center>
+                <br/>
+                <hr class="soften">
+
+                <br/>
+                <p class="marketing-byline" style="text-align:center;font-family:arial;font-size:130%;color:#000000">
+                    <mark>If you are able to build the MVP for our idea to get it listed on <a href="http://projects.preseed.in" target="_blank">Preseed Projects</a> soon enough, consider yourself sorted.</mark>
+                </p>
+                <br/>
+                <br/>
+                <center>
+                    <a href="https://medium.com/the-preseed/ff62b3163ca2" style="color:#f33c3c;" target="_blank">
+                        <strong style="font-size:28px;font-family:arial">Check out our R&D Direction</strong>
+                    </a>
+                </center>
+                <br/>
+                <br/>
+                <br/>
+                <p class="marketing-byline" style="text-align:center;font-family:arial;font-size:130%;color:#979797">Read <a href="https://medium.com/p/43f9f0771104" target="_blank">this</a> before you apply to build our products.</p>
+                <br/>
+            </div>
+            <div align="center" class="container">
+                <a href="https://applypreseed.typeform.com/to/l6CwSP" class="btn btn-warning btn-large" target="_blank" style="box-shadow:none;">Sounds Interesting? <strong>Apply Here.</strong></a>
+                </br>
+                <p align="center" class="text-warning">
+                    <small><a href="#what" target="_blank" data-toggle="modal" class="text-warning">Do you fit?</a>
+                    </small>
+                </p>
+            </div>
+            <br>
+            <div class="marketing-byline" style="text-align:center;font-family:arial;font-size:130%;color:#979797;line-height:150%">
+                If you have a project that you have been able to progress enough to show us something about it.
+                </br>Please fill up the below mentioned Project Detail Form if you would like it to become a part of <a href="http://anythinglab.preseed.in/projects/prefund/" style="font-weight: bold;font-style:normal;font-size:130%;COLOR:#2A9F00;font-family:arial" target="_blank">Prefund</a> 
+                </br>with you retaining a share in your project that you reasonably deserve.</br>
+                </br>
+                <p>
+                    <small><a href="https://medium.com/preseed-verticals/3eead11ee71e" target="_blank" data-toggle="modal" class="text-info"> Read more</a>
+                    </small>
+                </p>
+                </br>
+                <p>
+                    <small><a href="https://applypreseed.typeform.com/to/dIbYqN" class="btn btn-warning btn-large" target="_blank" style="box-shadow:none;">Project Detail Form</a>
+                    </small>
+                </p>
+            </div>
+            </br>
+            <p style="text-align:center;font-family:arial;font-size:130%;color:#979797;line-height:150%">
+                Do you know, if you fit, and have about 15 hour's a week to spare, we may be able to channel you in. Those interested in getting updates on work openings at Preseed Web Lab <a href="http://preseed.us3.list-manage1.com/subscribe?u=6d760d307e7d9e29e2344532b&id=a002535488" STYLE="font-size:15px;font-weight: bold;font-style:normal;font-size:110%;COLOR:#2A9F00" target="_blank">subscribe</a> here.
+            </p>
+
+
+
+
+            <div id="what" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabelWhat" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabelWhat">Who is it for</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Definitely not for the faint-hearted. Apply here, if you have it in you to one day co build a profound product, because that is what is in it for you. Any short of extraordinaire, and you may not fit the bill.</p>
+                </div>
+
+
+                <div class="modal-footer">
+                    <a href="http://apply.preseed.in/weblab.html" target="_blank" class="btn btn-success" style="box-shadow:none;">Let's Start</a>
+                </div>
+            </div>
+            <br/>
+            <br/>
+        </div>
+
     </div>
-	<div class="modal-footer">
-    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Nice!</button>
-	</div>
-</div>
-<hr class="soften">
- <center><p class="lead" style="font-size:36px;font-family:arial">PRODUCT DEVELOPMENT TEAM</p></center>
- <br/><br/><br/>
- <center>
- <div class="span4"><h3><a href="https://angel.co/saikiran-daripelli" target="-blank" style="font-size:20px;font-family:arial">sai</a></h3></div>
- <div class="span4"><h3><a href="https://twitter.com/17haval" target="-blank" style="font-size:20px;font-family:arial">17haval</a></h3></div>
-<!--<div class="span3"><h3><a href="https://twitter.com/naresh_sennam" target="-blank" style="font-size:20px;font-family:arial">naresh</a></h3></div>-->
- <div class="span4"><h3><a href="https://twitter.com/sahildua2305" target="-blank" style="font-size:20px;font-family:arial">sahil</a></h3></div>
- 	
- </center>
- <br/>
- <hr class="soften">
-
-<br/>
-  <p class="marketing-byline" style="text-align:center;font-family:arial;font-size:130%;color:#000000"><mark>If you are able to build the MVP for our idea to get it listed on <a href="http://projects.preseed.in" target="_blank">Preseed Projects</a> soon enough, consider yourself sorted.</mark></p><br/><br/>
- <center>
- <a href="https://medium.com/the-preseed/ff62b3163ca2" style="color:#f33c3c;" target="_blank"><strong style="font-size:28px;font-family:arial">Check out our R&D Direction</strong></a>
- </center>
-<br/><br/><br/>
-<p class="marketing-byline" style="text-align:center;font-family:arial;font-size:130%;color:#979797">Read <a href="https://medium.com/p/43f9f0771104" target="_blank">this</a> before you apply to build our products.</p>
-<br/>
-     </div>
-    <div  align="center" class="container">
-           <a href="https://applypreseed.typeform.com/to/l6CwSP" class="btn btn-warning btn-large" target="_blank" style="box-shadow:none;">Sounds Interesting? <strong>Apply Here.</strong></a></br>
-           <p align="center" class="text-warning"><small><a href="#what" target="_blank" data-toggle="modal" class="text-warning">Do you fit?</a></small> </p>
-    </div>
-  <br>
-  <div class="marketing-byline" style="text-align:center;font-family:arial;font-size:130%;color:#979797;line-height:150%" >
-  If you have a project that you have been able to progress enough to show us something about it. 
-  </br>Please fill up the below mentioned Project Detail Form if you would like it to become a part of <a href="http://anythinglab.preseed.in/projects/prefund/" style="font-weight: bold;font-style:normal;font-size:130%;COLOR:#2A9F00;font-family:arial" target="_blank">Prefund</a> </br>with you retaining a share in your project that you reasonably deserve. </br></br>
-  <p><small><a href="https://medium.com/preseed-verticals/3eead11ee71e"  target="_blank" data-toggle="modal" class="text-info"> Read more</a></small> </p> </br>
-  <p><small><a href="https://applypreseed.typeform.com/to/dIbYqN"  class="btn btn-warning btn-large" target="_blank" style="box-shadow:none;">Project Detail Form</a></small> </p>
-  </div></br>
-<p style="text-align:center;font-family:arial;font-size:130%;color:#979797;line-height:150%">
-Do you know, if you fit, and have about 15 hour's a week to spare, we may be able to channel you in.
-Those interested in getting updates on work openings at Preseed Web Lab <a href="http://preseed.us3.list-manage1.com/subscribe?u=6d760d307e7d9e29e2344532b&id=a002535488" STYLE="font-size:15px;font-weight: bold;font-style:normal;font-size:110%;COLOR:#2A9F00" target="_blank">subscribe</a> here.
-</p>
- 
- 
-        
-
-    <div id="what" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabelWhat" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabelWhat">Who is it for</h3>
-  </div>
-  <div class="modal-body">
-    <p>Definitely not for the faint-hearted. Apply here, if you have it in you to one day co build a profound product, because that is what is in it for you. Any short of extraordinaire, and you may not fit the bill.</p>
-  </div>
-
-
-  <div class="modal-footer">
-    <a href="http://apply.preseed.in/weblab.html" target="_blank" class="btn btn-success" style="box-shadow:none;">Let's Start</a>
-  </div>
-</div>
-<br/><br/>
-<!--
-<p class="marketing-byline" style="text-align:center;font-family:ama">If you have a project that you have been able to progress enough to show us something about it, please fill up this <a href="https://docs.google.com/a/preseed.in/forms/d/1JUDFC0zVWLRz1QEZzUesnoXpb6cA342Etb3kzQKt51I/edit?usp=sharing" target="_blank">form</a> if you would like it to become a part of Preseed Web Lab with you retaining a share in your project that you reasonably deserve. <a href="https://medium.com/preseed-verticals/3eead11ee71e" target="_blank">Read more.</a></p>-->
-
-			
-<!-- <div class="container">       
-<a href="https://docs.google.com/a/preseed.in/forms/d/1JUDFC0zVWLRz1QEZzUesnoXpb6cA342Etb3kzQKt51I/edit?usp=sharing" class="btn btn-success btn-large" target="_blank" style="box-shadow:none;">Mention Project Details</a>  
-</div>-->
-  </div>
-    
-</div>
 
 
 
@@ -644,16 +828,29 @@ Those interested in getting updates on work openings at Preseed Web Lab <a href=
     <!-- Footer
     ================================================== -->
     <footer class="footer">
-      <div class="centerDiv" align="justify">
-	  <script async src="https://static.medium.com/embed.js"></script>
-	  <a class="m-story" data-collapsed="true" href="https://medium.com/the-preseed/preseed-web-lab-d0ed81ec648d">Preseed Web Lab</a><br><br><br><br>
-      <p style="size:55px">If you have a profound idea that you would like to drive in Preseed Web Lab with the help of us and our team email us at do@preseed.in</p><br><br><br><br><br>
-      </div>
-      <p style="margin-top:350px"><a href="http://preseed.in/legal" target="_blank" title=""> Copyright © 2014 Preseed Ventures Pvt. Ltd. | All Rights Reserved</p></a>
+        <div class="centerDiv" align="justify">
+            <script async src="https://static.medium.com/embed.js"></script>
+            <a class="m-story" data-collapsed="true" href="https://medium.com/the-preseed/preseed-web-lab-d0ed81ec648d">Preseed Web Lab</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p style="size:55px">If you have a profound idea that you would like to drive in Preseed Web Lab with the help of us and our team email us at do@preseed.in</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <p style="margin-top:50px"><a href="http://preseed.in/legal" target="_blank" title=""> Copyright © 2014 Preseed Ventures Pvt. Ltd. | All Rights Reserved</p></a>
 
-      <!--<p style="margin-top:350px">Copyright © 2014 Preseed Ventures Pvt Ltd | all rights reserved</p>-->
-      
+            <!--<p style="margin-top:350px">Copyright © 2014 Preseed Ventures Pvt Ltd | all rights reserved</p>-->
+
     </footer>
+
+    </div>
+
+
 
 
 
@@ -661,18 +858,19 @@ Those interested in getting updates on work openings at Preseed Web Lab <a href=
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1930971-6']);
+    _gaq.push(['_trackPageview']);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1930971-6']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
 
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
@@ -697,5 +895,6 @@ Those interested in getting updates on work openings at Preseed Web Lab <a href=
 
 
 
-  </body>
+</body>
+
 </html>
