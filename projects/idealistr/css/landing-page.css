@@ -120,6 +120,13 @@ p{
 	float: left;
 }
 
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 .banner {
 /*
 	padding: 100px 0;
