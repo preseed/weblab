@@ -37,6 +37,7 @@
         margin: 0 auto;
         float: center;
     }*/
+    
     #gc_button:hover {
         border-color: #5C5C5C;
     }
@@ -121,9 +122,20 @@
                 <br/>
                 <em>
                     <h4>If you are an
-                        <span title="Those inspired hackers that are interested in building our products in exchange for the title of cofounder and substantial stake in that product with a will to drive that product into being a startup in itself." style="color:#f33c3c">inspired hacker, hustler, or a designer</span>who could build with us web/mobile
-                        <br/>products, dig this page and it's surrounding links very well.</h4>
+                        <a style="color:#f33c3c;cursor: pointer;outline:none;" href="#hhd" data-toggle="modal">inspired hacker, hustler, or a designer </a>who could build with us web/mobile
+                        <br/>products, dig this page and it's surrounding links very well.
+                    </h4>
                 </em>
+                <div id="hhd" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel3">Inspired Hacker, Hustler, or a Designer</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p style="text-align: left;">Inspired hackers, hustlers and designers are those hackers, hustlers and designers who are intrinsically motivated to build something as leaders as against building as employees. They must have an incredible drive to become entrepreneurs by owning a certain stock in what they build with us, not by pocketing salaries.</p>
+
+                    </div>
+                </div>
 
 
                 <br/>
@@ -282,7 +294,7 @@ Below Nishchals name/ twitter handle add PWL manager requirements <We are lookin
                 <hr class="soften">
 
                 <p class="lead" style="font-size:48px">In the laboratory</p>
-                <p class="marketing-byline">These are the ideas and products that are still in the cooking stage. The stuff that keeps us up at nights.
+                <p class="marketing-byline">These are the ideas and products that are cooking here. This is the food that keeps us going.
                     <br/>
 
                     <br/>
@@ -305,7 +317,7 @@ Below Nishchals name/ twitter handle add PWL manager requirements <We are lookin
                     </li>
 
 
-                   <div id="webid" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+                    <div id="webid" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                             <h3 id="myModalLabel5">Web Identity</h3>
@@ -328,46 +340,63 @@ Below Nishchals name/ twitter handle add PWL manager requirements <We are lookin
                         </div>
                     </div>
 
-                    <li class="span3">
-                        <a href="#news" data-toggle="modal" class="thumbnail">
+                    <li class="span3 prototyped">
+                        <a href="#tl" data-toggle="modal" class="thumbnail color-change">
                             <h2>
-                                <strong>Headlines</strong>
+                                <strong>Manage HR</strong>
+                            </h2>
+                        </a>
+
+                    </li>
+
+                    <div id="tl" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel">Manage HR</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>A tool to list team on website like olark contact us widget, that allows anyone with a website to list their teams. It could in future evolve into a HR product for companies.</p>
+                            <p stylr="text-align:center"><a href="http://weblab.preseed.in/projects/teambuild" target="_blank">Open it's web page</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
+                        </div>
+                    </div>
+
+                    <li class="span3 prototyped">
+                        <a href="#ideal" data-toggle="modal" class="thumbnail color-change">
+                            <h2>
+                                <strong>Idea List</strong>
                             </h2>
                         </a>
                     </li>
 
-                    <div id="news" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+
+                    <div id="ideal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h3 id="myModalLabel6">Headlines Now</h3>
+                            <h3 id="myModalLabel5">Idea List</h3>
                         </div>
                         <div class="modal-body">
-
-                            <p>
-                                <strong>Our 2 seconds pitch for you:</strong>
-                                <em>We are building a new way to skim through your daily newspaper. Blazing fast.</em>
-                            </p>
-
-                            <p>
-                                <small>Even in this day and age, majority of consumers get their daily fix of news through the newspaper dropped at the door. And with so many 'Social' news readers available, comes so much 'Social' noise. An interesting article here, a viral cat video there.</small>
-                            </p>
-                            <p>
-                                <strong>We plan to change all that. Soon.</strong>
+                            <p>A network of hackers, designers, hustlers, and early adopters; all who aim to build mvps.</p>
+                            <p><a href="http://weblab.preseed.in/projects/idealistr/" target="_blank">Open it's web page.</a>
                             </p>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
+                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Cool</button>
                         </div>
                     </div>
-                    <li class="span3">
+
+                    <!-- <li class="span3">
                         <a href="#store" data-toggle="modal" class="thumbnail">
                             <h2>
                                 <strong>Store</strong>
                             </h2>
                         </a>
-                    </li>
+                    </li> -->
 
-                    <div id="store" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+                    <!-- <div id="store" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                             <h3 id="myModalLabel3">Really cool products at your doorsteps</h3>
@@ -380,7 +409,7 @@ Below Nishchals name/ twitter handle add PWL manager requirements <We are lookin
                         <div class="modal-footer">
                             <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Stop Tempting!</button>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <li class="span3 prototyped">
@@ -544,6 +573,37 @@ Below Nishchals name/ twitter handle add PWL manager requirements <We are lookin
                         </div>
                     </div>
 
+                    <li class="span3">
+                        <a href="#news" data-toggle="modal" class="thumbnail">
+                            <h2>
+                                <strong>Headlines</strong>
+                            </h2>
+                        </a>
+                    </li>
+
+                    <div id="news" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel6">Headlines Now</h3>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                                <strong>Our 2 seconds pitch for you:</strong>
+                                <em>We are building a new way to skim through your daily newspaper. Blazing fast.</em>
+                            </p>
+
+                            <p>
+                                <small>Even in this day and age, majority of consumers get their daily fix of news through the newspaper dropped at the door. And with so many 'Social' news readers available, comes so much 'Social' noise. An interesting article here, a viral cat video there.</small>
+                            </p>
+                            <p>
+                                <strong>We plan to change all that. Soon.</strong>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Nice!</button>
+                        </div>
+                    </div>
 
                     <li class="span3 prototyped">
                         <a href="#gc" data-toggle="modal" id="gc_button" class="thumbnail color-change" style="color:#979797">
@@ -567,31 +627,9 @@ Below Nishchals name/ twitter handle add PWL manager requirements <We are lookin
                         </div>
                     </div>
 
-                    <li class="span3 prototyped">
-                        <a href="#tl" data-toggle="modal" class="thumbnail color-change">
-                            <h2>
-                                <strong>Manage HR</strong>
-                            </h2>
-                        </a>
 
-                    </li>
 
-                    <div id="tl" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h3 id="myModalLabel">Manage HR</h3>
-                        </div>
-                        <div class="modal-body">
-                            <p>A tool to list team on website like olark contact us widget, that allows anyone with a website to list their teams. It could in future evolve into a HR product for companies.</p>
-                            <p stylr="text-align:center"><a href="http://weblab.preseed.in/projects/teambuild" target="_blank">Open it's web page</a>
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">OK. Good</button>
-                        </div>
-                    </div>
-
-                    <li class="span3">
+                    <!-- <li class="span3">
                         <a href="#catering" data-toggle="modal" class="thumbnail">
                             <h2>
                                 <strong>Event Catering</strong>
@@ -614,36 +652,14 @@ Below Nishchals name/ twitter handle add PWL manager requirements <We are lookin
                         <div class="modal-footer">
                             <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Wow!</button>
                         </div>
-                    </div>
+                    </div> -->
                 </ul>
 
                 <ul class="thumbnails example-sites">
 
-                    <li class="span3 prototyped">
-                        <a href="#ideal" data-toggle="modal" class="thumbnail color-change">
-                            <h2>
-                                <strong>Idea List</strong>
-                            </h2>
-                        </a>
-                    </li>
 
 
-                    <div id="ideal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h3 id="myModalLabel5">Idea List</h3>
-                        </div>
-                        <div class="modal-body">
-                            <p>A network of hackers, designers, hustlers, and early adopters; all who aim to build mvps.</p>
-                            <p><a href="http://weblab.preseed.in/projects/idealistr/" target="_blank">Open it's web page.</a>
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Cool</button>
-                        </div>
-                    </div>
-
-                    <li class="span3 prototyped">
+                    <!-- <li class="span3 prototyped">
                         <a href="#honey" data-toggle="modal" class="thumbnail color-change">
                             <h2>
                                 <strong>Pure Honey</strong>
@@ -667,7 +683,7 @@ Below Nishchals name/ twitter handle add PWL manager requirements <We are lookin
                         <div class="modal-footer">
                             <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Nice!</button>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!--<li class="span3">
                         <a href="#fmcg" data-toggle="modal" class="thumbnail">
@@ -709,7 +725,10 @@ Below Nishchals name/ twitter handle add PWL manager requirements <We are lookin
                 <br>
                 <br>
                 <p class="marketing-byline" style="text-align:center;font-family:arial;font-size:150%;color:#979797;line-height:150%">
-                    Please read <a href="https://medium.com/preseed-web-lab/to-pwl-products-high-impact-feedback-people-8a587a32246"><strong>this</strong></a> and fill up our high impact feedback form for any one or more of our products please, we will be in state of gratitude towards you forever.
+                    Please read
+                    <a href="https://medium.com/preseed-web-lab/to-pwl-products-high-impact-feedback-people-8a587a32246">
+                        <strong>this</strong>
+                    </a>and fill up our high impact feedback form for any one or more of our products please, we will be in state of gratitude towards you forever.
                     <br>
                     <br>
                     <a href="https://applypreseed.typeform.com/to/D65tHV" class="btn btn-info btn-small" target="_blank" style="box-shadow:none;">
