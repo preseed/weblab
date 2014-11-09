@@ -53,7 +53,7 @@ font-size: 60px;
 .content{
 width: 100%;/*940px*/
 float: left;
-margin-top: 15.42%;/*145px*/
+margin-top: 13.42%;/*145px*/
 }
 
 .content p{
@@ -62,9 +62,9 @@ margin-top: 2.12%;/*20px*/
 }
 
 p.big_text{
-font-size: 27px;
+font-size: 22px;
 margin-bottom: 0.531%;/*5px*/
-margin-top: -5.31%;/*5px*/
+margin-top: -4.29%;/*5px*/
 }
 .form{
 width: 51.59%;/*485px*/
