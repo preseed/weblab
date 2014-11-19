@@ -115,14 +115,11 @@ padding: 0;
 }
 
 }
-/*footer {
-  margin-top: 3.19%;/*30px*/
- /* margin-bottom: 2.12%;/*20px*/
-/*}*/
-
 footer {
-    padding: 100px 0;
+  margin-top: 3.19%;/*30px*/
+  margin-bottom: 2.12%;/*20px*/
 }
+
 .button {
    
    background: transparent;
