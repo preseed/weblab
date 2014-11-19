@@ -22,12 +22,8 @@ height: 100%;
 }
 
 #transy{
-/*width: 100%;
-height: 100%;*/
--webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-    background-size: cover;
+width: 100%;
+height: 100%;
 float: left;
 background: #08233e;
 opacity: 0.8;
@@ -37,9 +33,7 @@ z-index: -1;
 }
 
 #wrapper{
-/*width: 940px;*/
-width: 100%;
-height: 100%;
+width: 940px;
 margin: 0 auto;
 }
 
