@@ -37,7 +37,8 @@ z-index: -1;
 }
 
 #wrapper{
-width: 940px;
+/*width: 940px;*/
+width: 100%;
 margin: 0 auto;
 }
 
