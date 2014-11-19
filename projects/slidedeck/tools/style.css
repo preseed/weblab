@@ -22,8 +22,12 @@ height: 100%;
 }
 
 #transy{
-width: 100%;
-height: 100%;
+/*width: 100%;
+height: 100%;*/
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
 float: left;
 background: #08233e;
 opacity: 0.8;
@@ -115,9 +119,13 @@ padding: 0;
 }
 
 }
-footer {
+/*footer {
   margin-top: 3.19%;/*30px*/
-  margin-bottom: 2.12%;/*20px*/
+ /* margin-bottom: 2.12%;/*20px*/
+/*}*/
+
+footer {
+    padding: 100px 0;
 }
 .button {
    
