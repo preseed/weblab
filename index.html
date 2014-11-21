@@ -45,14 +45,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
     <div id="page-wrapper">
 
@@ -756,15 +748,25 @@ Below Nishchals name/ twitter handle add PWL manager requirements <We are lookin
                  <center>
                 <div class="span4">
                 <div class="fb-like" data-href="https://www.facebook.com/thepreseed" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                 var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+
                 </div>
                 <div class="span4">
                 <a href="https://twitter.com/thepreseed" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Follow @twitter</a>
                 </div>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+               
                 <div class="span4">
                 <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="preseed" data-url="http://weblab.preseed.in/" data-count="horizontal" data-style="facebook">Vote on Hacker News</a>
-                <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
                 </div>
+                <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
                 </center>
 
 
