@@ -29,12 +29,13 @@ background: #08233e;
 opacity: 0.8;
 filter: alpha(opacity=80);
 position: absolute;
-z-index: -1;
+z-index: 1;
 }
 
 #wrapper{
 width: 940px;
 margin: 0 auto;
+
 }
 
 .logo{
