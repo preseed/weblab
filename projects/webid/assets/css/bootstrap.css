@@ -308,9 +308,7 @@ body {
   line-height: 1.428571429;
   color: #333333;
   background-color: #ffffff;
-  -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
+
 }
 
 input,
@@ -347,6 +345,7 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
+  
 }
 
 .img-rounded {
@@ -785,8 +784,8 @@ pre code {
 }
 
 .container {
-  padding-right: 2%;
-  padding-left: 2%;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
