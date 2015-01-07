@@ -15,6 +15,8 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/signin.css" rel="stylesheet">
+	
+
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -30,10 +32,64 @@
         -webkit-box-shadow: 0 0 15px #fff;
         box-shadow: 0 0 15px #fff;
     }
+	
+	body {
+  /* Location of the image */
+  background-image: url("images/optimizedweb.png") ;
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url("images/optimizedweb1.png") !important;
+	/* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  backgound-width:100%;
+  }
+  
+  
+  
+	}
+	
+	
+	
     </style>
 </head>
 
-<body style="background-image:url('images/optimizedweb.png');background-attachment:fixed;background-size: cover;background-size:100% 100% ;background-repeat: no-repeat;width:100%;">
+<body ><!-- style="background-image:url('images/optimizedweb.png');background-attachment:fixed;background-size: cover;background-size:100% 100% ;background-repeat: no-repeat;width:100%;" -->
 
 
     <div class="container">
