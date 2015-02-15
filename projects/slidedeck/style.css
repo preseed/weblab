@@ -1,5 +1,5 @@
 /* CSS Document */
-body{ background: url(images/bg1.png) no-repeat center center fixed; 
+body{ background: url(images/bg1.png) no-repeat center center scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
