@@ -1,0 +1,38 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+font-face {
+font-family:'quatreg';
+src:url:('fa/fonts/quatreg.woff');
+} 
+.hov {
+		background-image:url('med4.png');
+		
+		background-repeat:no-repeat;
+		margin-top:11px;
+		margin-right:7px;
+		margin-left:12px;
+		background-position:center;
+		}
+	
+.cl:hover{
+color:rgb(255,39,120);
+}
+.group-title {
+width: 100%;
+border-top: 1px solid rgb(183, 221, 237);
+text-align: center;
+margin-top: 80px;
+
+}
+.group-title h6{
+    display: inline-block;
+    position: relative;
+    top: -40px;
+    border: 1px solid rgb(183, 221, 237);
+    background: none repeat scroll 0% 0% rgb(244, 250, 252);
+    color: rgb(11, 84, 114);
+    padding: 13px 60px 10px;
+	}

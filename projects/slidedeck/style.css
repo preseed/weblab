@@ -1,0 +1,79 @@
+/* CSS Document */
+body{ background: url(images/bg1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  	background-size: cover;
+	text-align:center;
+	color:#FFFFFF;
+
+	}
+.logo{
+
+margin-top: 30px;
+margin-bottom: 100px;
+}
+h1{
+margin-top: 7.44%;/*70px*/
+text-align: center;
+font-size: 60px;
+}
+
+.content{
+
+margin-top: 13.42%;/*145px*/
+}
+.content p{
+text-align: center;
+margin-top: 2.12%;/*20px*/
+}
+p.big_text{
+font-size: 22px;
+margin-bottom: 0.531%;/*5px*/
+margin-top: -4.29%;/*5px*/
+}
+.form{
+
+margin: 2.12% auto 0 auto;/*20px auto 0 auto*/
+}
+.field_content{
+background: url(../images/field.png) left top no-repeat;
+margin-top: 80px;/*80px*/
+}
+.button {
+   
+   background: transparent;
+   padding: 7px 14px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+  
+  margin-top: 7%;
+   color: #9696E6;
+   font-size: 18px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   
+   }
+    .button:hover{
+      color: #9696E6;
+      border: #9696E6;
+    }
+   
+   .button a{
+    text-decoration: none;
+   }
+   footer {
+  margin-top: 3.19%;/*30px*/
+  margin-bottom: 2.12%;/*20px*/
+}
+.clear{
+clear: left;
+clear: both;
+margin: 0;
+padding: 0;
+}
