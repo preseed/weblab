@@ -1,4 +1,5 @@
 /* CSS Document */
+html{background-color:#08233e;}
 body{ background: url(images/bg1.png) no-repeat center center scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
