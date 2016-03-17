@@ -1,0 +1,22 @@
+.borderr{
+border-style: solid;
+border-width:2px;
+border-color:white;
+border-radius:5px;
+margin-left:380px;
+margin-right:380px;
+padding-top:20px;
+padding-right:30px;
+padding-left:30px;
+}
+body{
+background-color:rgb(56,56,56) ;
+}
+.spaces{
+padding-bottom:60px;
+
+}
+.space{
+padding-bottom:15px;
+}
+

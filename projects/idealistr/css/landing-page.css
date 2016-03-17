@@ -1,0 +1,265 @@
+body, html {
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;	
+	font-weight: 700;
+}
+
+.lead {
+	font-size: 18px;
+	font-weight: 300;
+	color: #A8ABB9;
+}
+
+.btn-ts {
+	background: none;
+	color: #fff;
+	font-weight: 300;
+}
+.btn-ts:hover {
+	background: none;
+	color: #6baf20;
+	border: 1px solid #6baf20;
+}
+
+.intro-header {
+	padding-top: 30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 50px;
+	background: url(../img/background.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	background-attachment: fixed;
+}
+
+.intro-message {
+	position: relative;
+	padding-top: 17%;
+	padding-bottom: 17%;
+}
+
+.intro-message > h1 {
+	margin: 0;
+	font-size: 3.6em;
+	font-weight: 500;	
+    color: #fff;
+    text-shadow: 1px 1px 3px #142047;
+    
+	
+}
+
+.intro-divider {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#content {
+	padding: 50px 0;
+}
+
+
+
+h2.sub-section-heading{
+ 	color: #212C58;
+    font-size: 34px;
+    text-align: center;
+    font-weight: normal;
+}
+
+div.intro-message h3 {
+    color: #BCC0CF;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 1.5;
+/*    padding-top: 25px;
+*/    text-align: center;
+    width: 55%;
+    margin-bottom: 2%;
+}
+
+p{
+    color: #999;
+}
+
+.network-name {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.content-section {
+	background-color: #fff;
+	padding: 50px 0;
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+
+}
+
+.content-section img {
+	opacity: .2
+}
+
+.section-heading{
+	color: #212C58;
+    margin-bottom: 20px;
+    font-weight: 500;
+    margin-top: 0;
+
+}
+
+.section-heading-spacer {
+	border-top: 3px solid #e7e7e7;
+	width: 200px;
+	float: left;
+}
+
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.banner {
+/*
+	padding: 100px 0;
+	color: #f8f8f8;
+	background: url(../img/banner-bg.jpg) no-repeat center center;
+	background-size: cover;
+*/
+    
+    background: none repeat scroll 0 0 #EDEDED;
+    color: #F8F8F8;
+    padding: 100px 0 0;
+    
+}
+
+form.get-notified input[type="email"] {
+    margin-bottom: 1em;
+   	width: 45%;
+   	min-width: 300px;
+}
+
+.banner h2 {
+	 color: #444;
+    font-size: 34px;
+    margin: 0;
+    padding-bottom: 1em;
+    text-align: center;
+    font-weight: normal;
+}
+
+.banner ul {
+	margin-bottom: 0;
+}
+
+.banner-social-buttons {
+	float: right;
+	margin-top: 0;
+}
+
+.list-inline a, .list-inline p, p.copyright {
+    color: #888888;
+    font-weight: normal;
+}
+
+
+footer {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+}
+
+p.copyright {
+	margin: 15px 0 0;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+	.intro-message {
+		padding-bottom: 15%;
+	}
+
+	.intro-message > h1 {
+		font-size: 3em;
+	}
+
+	ul.intro-social-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	ul.intro-social-buttons > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.intro-divider {
+		width: 100%;
+	}
+}
+
+
+
+
+ 
+
+
+
+@media (max-width: 1199px) {
+	ul.banner-social-buttons {
+		float: left;
+		margin-top: 15px;
+	}	
+}
+
+@media (max-width: 767px) {
+	.banner h2 {
+		margin: 0;
+		
+		font-size: 3em;
+	}
+    div.intro-message h3 {
+    	width: 95%;
+    }
+   
+
+	ul.banner-social-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	ul.banner-social-buttons > li:last-child {
+		margin-bottom: 0;
+	}	
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) { div.intro-message h3 {
+    background: none repeat scroll 0 0 #DDDDDD;
+    color: #666666;
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: normal;
+    line-height: 1.3;
+    padding: 10px;
+    text-align: center;
+    width: 71%;
+}
+
+    .intro-message > h1 {
+    font-size: 2em;
+}
+
+}
+
+

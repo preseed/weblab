@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slide Deck | Hard time getting investor?</title>
+    <link href="tools/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="tools/jquery.min.js"></script>
+    <script type="text/javascript" src="tools/cufon-yui.js"></script>
+    <script type="text/javascript" src="tools/Abraham_Lincoln_400.font.js"></script>
+    <script type="text/javascript" src="tools/Inspiration_400.font.js"></script>
+    <script type="text/javascript" src="tools/Museo_Slab_100_400-Museo_Slab_700_400.font.js"></script>
+    <script type="text/javascript">
+    Cufon.replace('.logo h1', {
+        fontFamily: 'Museo Slab 100'
+    });
+    Cufon.replace('.logo h2', {
+        fontFamily: 'Museo Slab 100'
+    });
+    Cufon.replace('.logo h2 span', {
+        fontFamily: 'Abraham Lincoln'
+    });
+    Cufon.replace('p.big_text, p.small_text', {
+        fontFamily: 'Museo Slab 100'
+    });
+    Cufon.replace('p.big_text strong, p.small_text strong', {
+        fontFamily: 'Museo Slab 700'
+    });
+    </script>
+    <script type="text/javascript">
+    function showAlert() {
+        setTimeout(function() {
+            alert('To complete the subscription process, please click the link in the email we just sent you.');
+        }, 1000);
+    }
+
+    function validateForm() {
+        var x = document.forms["myForm"]["email"].value;
+        var atpos = x.indexOf("@");
+        var dotpos = x.lastIndexOf(".");
+        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+            alert("Not a valid e-mail address");
+            return false;
+        }
+    }
+    </script>
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="transy">
+    
+    <div id="wrapper">
+        <div class="logo">
+            <h1>Slide Deck</h1>
+
+            <div class="content">
+
+                <p class="big_text">
+                <strong>An evolving, social and collaborative Startup Slide Deck.
+                <br>
+                <br>
+                Imagine a platform made up of only startup slide decks. This can be that. Entrepreneurs and aspiring entrepreneurs will have so much to learn from it apart from better collaboration and sharing of such decks with team members and investors.
+				<a href="https://medium.com/preseed-anything-lab/slide-deck-a1fdbbc61892" target="blank" style="color:#8B90B3;">Here</a> is some of our vision towards the fundamentals surrounding a startup slide deck</strong>
+                </p>
+
+                <div class="form">
+
+                    <div class="field_content">
+                        <form action="//preseed.us8.list-manage.com/subscribe/post?u=8d28ba8a8bc00bd59a96501f8&amp;id=af84bb24eb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" onsubmit="return validateForm();">
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div>
+                                <input type="text" title="We won't spam you. We promise!" id="subscribe" name="email" tabindex="-1" value="" placeholder="Request Invite" class="field" autofocus required>
+                                <input class="submit" id="myButton" type="button" value="" onClick="showAlert();" />
+
+                            </div>
+
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+                    <!--End mc_embed_signup-->
+					
+					
+                    <div class="learn">
+                        <form style="display: inline" action="https://medium.com/@Nishchal/slide-deck-a1fdbbc61892" method="get">
+                            <button class="button">Learn More</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="alert" style="display: none;">
+                    To complete the subscription process, please click the link in the email we just sent you.
+                </div>
+				<div class="clear"></div>
+				
+                <footer class="footer">
+                    <p style="text-align:center"><a href="http://preseed.in/legal" target="_blank" title=""> Copyright © 2015 Preseed Ventures Pvt. Ltd. | All Rights Reserved</p></a>
+                    <!--<p>a <a id="under" href="https://weblab.preseed.in">Preseed Web Lab</a> project.</p>
+                    <p>Preseed © 2014</p>-->
+                </footer>
+            </div>
+        </div>
+    </div>
+ </div>
+</body>
+
+</html>

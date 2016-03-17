@@ -1,0 +1,1007 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontelloc7c7.eot?71326381');
+  src: url('../fonts/fontelloc7c7.eot?71326381#iefix') format('embedded-opentype'),
+       url('../fonts/fontelloc7c7.woff?71326381') format('woff'),
+       url('../fonts/fontelloc7c7.html?71326381') format('truetype'),
+       url('../fonts/fontelloc7c7.svg?71326381#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?71326381#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+ 
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+[class^="icon-"]:not(.icon-android) {
+  padding: 4px;
+  border-radius: 50px;
+  margin: 3px;
+  font-size: 18px;
+  display: inline-block;
+  -webkit-transition-property: background-color opacity;
+  -webkit-transition-duration: 0.3s;
+  /* Bientôt supporté par Firefox */
+  -moz-transition-property: background-color opacity;
+  -moz-transition-duration: 0.3s;
+  /* … et lorsque ce sera standardisé */
+  transition-property: background-color opacity;
+  transition-duration: 0.3s; }
+
+[class^="icon-"]:hover {
+	text-decoration: none;
+}
+.icon-android {
+	float: left;
+}
+ 
+.icon-android:before { content: '\e800'; } /* '' */
+
+.icon-mail {
+  background: #22c384; }
+  .icon-mail:before {
+  content: '\e804'; }
+  .icon-mail:hover {
+    background: #44e5a6;
+    -webkit-transition-property: background-color opacity;
+    -webkit-transition-duration: 0.3s;
+    /* Bientôt supporté par Firefox */
+    -moz-transition-property: background-color opacity;
+    -moz-transition-duration: 0.3s;
+    /* … et lorsque ce sera standardisé */
+    transition-property: background-color opacity;
+    transition-duration: 0.3s; }
+
+.icon-facebook {
+  background: #3b5998; }
+  .icon-facebook:before {
+  content: '\e802'; }
+  .icon-facebook:hover {
+    background: #5d7bba;
+    -webkit-transition-property: background-color opacity;
+    -webkit-transition-duration: 0.3s;
+    /* Bientôt supporté par Firefox */
+    -moz-transition-property: background-color opacity;
+    -moz-transition-duration: 0.3s;
+    /* … et lorsque ce sera standardisé */
+    transition-property: background-color opacity;
+    transition-duration: 0.3s; }
+
+.icon-gplus {
+  background: #dd4c39; }
+  .icon-gplus:before {
+   content: '\e801'; }
+  .icon-gplus:hover {
+    background: #ff6e5b;
+    -webkit-transition-property: background-color opacity;
+    -webkit-transition-duration: 0.3s;
+    /* Bientôt supporté par Firefox */
+    -moz-transition-property: background-color opacity;
+    -moz-transition-duration: 0.3s;
+    /* … et lorsque ce sera standardisé */
+    transition-property: background-color opacity;
+    transition-duration: 0.3s; }
+
+.icon-linkedin {
+  background: #007bb6; }
+  .icon-linkedin:before {
+    content: '\e801'; }
+  .icon-linkedin:hover {
+    background: #229dd8;
+    -webkit-transition-property: background-color opacity;
+    -webkit-transition-duration: 0.3s;
+    /* Bientôt supporté par Firefox */
+    -moz-transition-property: background-color opacity;
+    -moz-transition-duration: 0.3s;
+    /* … et lorsque ce sera standardisé */
+    transition-property: background-color opacity;
+    transition-duration: 0.3s; }
+
+.icon-twitter {
+  background: #3cc0ec; }
+  .icon-twitter:before {
+   content: '\e803';  }
+  .icon-twitter:hover {
+    background: #5ee2ff;
+    -webkit-transition-property: background-color opacity;
+    -webkit-transition-duration: 0.3s;
+    /* Bientôt supporté par Firefox */
+    -moz-transition-property: background-color opacity;
+    -moz-transition-duration: 0.3s;
+    /* … et lorsque ce sera standardisé */
+    transition-property: background-color opacity;
+    transition-duration: 0.3s; }
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  font-family: "Roboto";
+}
+body {
+  color: #fff;
+  text-align: center;
+}
+
+.head {
+}
+
+h1,h3 {
+	color:#43d19a;
+}
+
+
+.gplay {
+background: #000;
+width:150px;
+float: right;
+height:50px;
+border-radius: 3px;
+color:#FFF;
+margin-top:15px;
+padding:10px;
+display: block;	
+}
+
+
+.mi img {
+height: 50px;
+margin-top: 14px;
+}
+
+
+
+.gplay {font-size: 10px;}
+
+h3 {
+	font-weight: 100;
+	font-size: 20px;
+	font-family: "Roboto Slab";
+}
+h2 {
+		font-family: "Roboto Slab";
+
+}
+.head h1 {font-size: 48px;
+font-size:5.2vw;
+font-size: 6.0vh;
+text-align: center;
+/* margin-right: -30px; */
+	}
+.head h1::before {
+	width: 64px;
+    content: " ";
+    /*background-image: url('../img/piktures.png');*/
+    background-size: 100%;
+    position: absolute;
+    height:64px;
+    margin-top: -5px;
+    margin-left:-80px;
+}
+
+.logo {
+	float: left;
+	margin-top: 7px;
+	margin-right: 20px;
+}
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  /*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    */
+    background:/* url('../img/bg.jpg')  */ white no-repeat center center fixed; 
+  /* background-size: cover;  */         
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+ 
+ /*
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+/*  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+*/
+
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+
+.mastfoot {padding: 2px 2px 2px 2px;
+	background: #FFF;
+	color:#000;z-index: 400;
+}
+
+.mastfoot .socials {
+font-size: 12px;
+	text-align: left;
+}
+.mastfoot .socials p {
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+
+.mastfoot h2 {margin-top: 28px;
+	font-size: 22px;
+	font-size: 1.8vw;
+	font-size: 2.5vh;
+	
+}
+.gplay {
+	 -webkit-transition-property: background-color opacity;
+  -webkit-transition-duration: 0.3s;
+  /* Bientôt supporté par Firefox */
+  -moz-transition-property: background-color opacity;
+  -moz-transition-duration: 0.3s;
+  /* … et lorsque ce sera standardisé */
+  transition-property: background-color opacity;
+  transition-duration: 0.3s;
+}
+.gplay:hover {
+	text-decoration: none;
+	background: #222;
+	 -webkit-transition-property: background-color opacity;
+  -webkit-transition-duration: 0.3s;
+  /* Bientôt supporté par Firefox */
+  -moz-transition-property: background-color opacity;
+  -moz-transition-duration: 0.3s;
+  /* … et lorsque ce sera standardisé */
+  transition-property: background-color opacity;
+  transition-duration: 0.3s;
+	
+}
+
+.gplay i {
+	font-size: 18px;margin-left: 10px;
+}
+.gplay span {
+	font-family: "Noto Sans";
+	font-size: 12px;
+}
+
+.gplay .txt {	font-size: 8px;
+
+	text-align: left;
+	margin-left:40px;}
+  
+}
+
+
+
+
+.mobile,
+.mobile img {
+  display: block;
+  outline: none;
+   }
+
+.mobile {
+	/* width:570px;
+	height:500px; */
+	width:40%;
+	height:400px;
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.device {
+	/*width: 422px;*/
+	width:30%;
+    content: " ";
+   background: /* url('../img/Nt_white.png') */ no-repeat ;/* top left;  */
+    background-size:100%;
+   height: 500px;
+	left:50%;
+	padding-top: 35px;
+	 overflow: visible; 
+	 position: relative;
+	 bottom:120px;
+	 margin-left:-111px;
+  }
+  
+
+
+
+
+
+.mobile img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.mobile ul {
+  margin: 0 0 0 -200px;
+  padding: 0;
+  width: 800px;
+  height: 100%; }
+
+.mobile ul li {
+  display: inline-block;
+  width: 200px;
+  position: relative;
+  float: left;
+  height: 100%; }
+
+.s2 {
+  left: 170px;
+  z-index: 40; }
+
+.s3 {
+	z-index: 48;
+}
+
+.s4 {z-index: 45;
+
+	margin-left: -170px;
+}
+
+/*
+.face {
+  backface-visibility: hidden;
+  color: white;
+  height: 100%;
+  left: 0;
+  z-index: 42;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%; 
+    -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+  
+  }
+
+.face.flipped {
+	-webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+}
+*/
+
+#card {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 140px;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card .front {
+      background: red;
+    }
+
+    #card .back {
+      background: blue;
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+
+.back {
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg); }
+  
+
+.calendarclick {
+	display: block;
+	position: absolute;
+	width:20px;
+	height: 20px;
+	top:7px;right:30px;
+	z-index: 50;
+	cursor: pointer;
+}
+
+
+.rightclick,.leftclick {
+	display: block;
+	position: absolute;
+	width:20px;
+	height: 20px;
+	z-index: 50;
+	cursor: pointer;
+	top:7px;
+}
+
+.rightclick {
+	right:4px;
+
+	
+}
+
+.leftclick {
+	left:6px;
+}
+
+.leftbox,.rightbox {
+	z-index: 50;
+cursor: -webkit-grab; cursor: -moz-grab;}
+.leftbox {
+	width:30px;
+	height:100%;
+	left:0;
+	top:0%;
+	position:absolute;
+}
+
+.rightbox {
+	width:30px;
+	height:100%;
+	right:0;
+	top:0%;
+	position:absolute;
+}
+
+@media screen and (min-width: 1400px) {
+
+.device {
+width:322px;
+height:464px;
+margin-left: -161px;
+padding-top:53px;
+padding-left:12px;
+padding-right:10px;
+
+}
+
+.mobile {
+width:300px;
+height:435px;
+}
+
+.mobile ul {
+  margin: 0 0 0 -300px;
+  padding: 0;
+  width: 1200px;
+  height: 100%; }
+
+.mobile ul li {
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  float: left;
+  height: 100%; }
+  
+  .s2 {
+  left: 255px;
+  z-index: 40; }
+
+.s3 {
+	z-index: 48;
+}
+
+.s4 {z-index: 45;
+
+	margin-left: -255px;
+}
+
+.calendarclick {
+	display: block;
+	position: absolute;
+	width:29px;
+	height: 29px;
+	top:10px;right:46px;
+	z-index: 50;
+	cursor: pointer;
+	border:1px solid white;
+}
+
+
+.rightclick,.leftclick {
+	display: block;
+	position: absolute;
+	width:28px;
+	height: 28px;
+	z-index: 50;
+	cursor: pointer;
+	top:10px;
+	border:1px solid green;
+}
+
+.rightclick {
+	right:7px;
+		border:1px solid red;
+
+	
+}
+
+.leftclick {
+	left:9px;
+}
+
+.leftbox,.rightbox {
+	z-index: 50;
+cursor: -webkit-grab; cursor: -moz-grab;}
+.leftbox {
+	width:45px;
+	height:100%;
+	left:0;
+	top:0%;
+	position:absolute;
+}
+
+.rightbox {
+	width:45px;
+	height:100%;
+	right:0;
+	top:0%;
+	position:absolute;
+}
+
+
+}
+
+@media screen and (min-height: 960px) {
+
+.device {
+width:322px;
+height:464px;
+margin-left: -161px;
+padding-top:53px;
+padding-left:12px;
+padding-right:10px;
+
+}
+
+.mobile {
+width:300px;
+height:435px;
+}
+
+.mobile ul {
+  margin: 0 0 0 -300px;
+  padding: 0;
+  width: 1200px;
+  height: 100%; }
+
+.mobile ul li {
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  float: left;
+  height: 100%; }
+  
+  .s2 {
+  left: 255px;
+  z-index: 40; }
+
+.s3 {
+	z-index: 48;
+}
+
+.s4 {z-index: 45;
+
+	margin-left: -255px;
+}
+
+.calendarclick {
+	display: block;
+	position: absolute;
+	width:29px;
+	height: 29px;
+	top:10px;right:46px;
+	z-index: 50;
+	cursor: pointer;
+	border:1px solid white;
+}
+
+
+.rightclick,.leftclick {
+	display: block;
+	position: absolute;
+	width:28px;
+	height: 28px;
+	z-index: 50;
+	cursor: pointer;
+	top:10px;
+	border:1px solid green;
+}
+
+.rightclick {
+	right:7px;
+		border:1px solid red;
+
+	
+}
+
+.leftclick {
+	left:9px;
+}
+
+.leftbox,.rightbox {
+	z-index: 50;
+cursor: -webkit-grab; cursor: -moz-grab;}
+.leftbox {
+	width:45px;
+	height:100%;
+	left:0;
+	top:0%;
+	position:absolute;
+}
+
+.rightbox {
+	width:45px;
+	height:100%;
+	right:0;
+	top:0%;
+	position:absolute;
+}
+
+.head h1 {margin-top: 50px;
+}
+.head h1:before {
+margin-top: 0px;
+}
+
+h2 {
+margin-top: 50px;
+}
+
+h3 {
+margin-top: 50px;
+	
+}
+
+
+}
+
+
+@media screen and (min-width: 1670px) {
+
+.head h1 {margin-top: 50px;
+font-size: 60px;
+}
+.head h1:before {
+margin-top: 0px;
+}
+
+h2 {
+font-size: 42px;
+margin-top: 50px;
+}
+
+h3 {font-size: 35px;
+margin-top: 50px;
+	
+}
+
+.mastfoot h2 {
+margin-top: 25px;
+font-size: 32px;
+}
+
+
+}
+
+
+
+@media screen and (max-height: 700px) {
+.device {
+bottom:70px;
+}
+}
+
+@media screen and (max-height: 600px) {
+.device {
+bottom:30px;
+}
+}
+
+
+
+@media screen and (max-width: 966px) {
+
+.h2 {
+font-size: 25px;
+margin-top: 50px;
+
+}
+
+h3 {
+margin-top: 50px;
+	
+}
+
+}
+
+
+@media screen and (max-width: 966px) and (max-height:853px) {
+.mastfoot {
+padding:10px 35px 10px;
+}
+.mastfoot h2{
+font-size: 18px;
+}
+
+.device {
+bottom:-30px;
+}
+
+	h3 {
+	margin-top: 25px;
+	}
+}
+
+
+
+@media screen and (max-width: 800px) {
+.mastfoot .socials {
+text-align: center;
+}
+.mastfoot {
+padding:20px 20px 10px;
+}
+
+.gplay {
+margin:15px auto;
+float: inherit;
+}
+
+
+.device {
+	bottom:170px;
+	
+}
+}
+
+
+
+@media screen and (max-width: 800px) and (max-height:600px) {
+
+
+.device {
+bottom:30px;
+}
+}
+@media screen and (min-width: 767px) and (min-height:1023px) {
+
+.mastfoot h2 {
+font-size: 17px;
+}
+
+
+[class^="icon-"]:not(.icon-android) {
+padding:2px;
+}
+
+.device {
+bottom: 100px;
+}
+
+}
+
+@media screen and (min-width: 800px) and (min-height:1280px) {
+
+.head h1 {
+margin-top:100px;
+}
+h2 {
+font-size: 40px;
+margin-top: 100px;
+
+}
+
+.mastfoot h2 {
+font-size: 18px;
+}
+
+h3 {
+font-size: 30px;
+margin-top: 100px;
+
+}
+
+[class^="icon-"]:not(.icon-android) {
+padding:2px;
+}
+
+.device {
+bottom: 110px;
+}
+
+
+}
+
+@media screen and (max-width: 360px) {
+
+.mastfoot {
+padding:10px 35px 5px;
+}
+.gplay {
+margin:5px auto;
+}
+.inner {
+padding:10px;
+}
+.head h1 {
+font-size: 24px;
+}
+h2 {
+font-size: 15px;
+margin:10px auto;
+}
+h3 {
+font-size: 14px;
+margin:10px auto;
+}
+.head h1:before {margin-left: -40px;
+
+width: 32px;height: 32px;
+background-size: 100%;
+}
+}
+
+@media screen and (max-width: 360px) and (max-height:640px) {
+	.hidden-xs {display: block !important; }
+}
+@media screen and (max-width: 360px) and (max-height:600px) {
+	.hidden-xs {display: none !important; }
+}
