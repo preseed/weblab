@@ -10,6 +10,11 @@ text-align: center;
 font-size: 1.4em;
 font-family: Helvetica;
 }
+@media only screen and (max-width: 780px) {
+    ul.nav.mobile{
+    	width: 100%;
+    }
+}
     </style>
     <meta charset="utf-8">
     <title>Preseed Web Lab</title>
@@ -62,19 +67,23 @@ font-family: Helvetica;
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                	<ul class="nav" style="float:left;padding:5px;">
+                            <a class="brand" href="http://preseed.in">
+                                <img src="Nnavbarlogo.png" title="Home" alt="" />
+                            </a>
+                        </ul>
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" style="margin:10px;" >
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <div class="nav-collapse collapse">
-
-                        <ul class="nav" style="float:left;">
-                            <a class="brand" href="http://preseed.in">
-                                <img src="Nnavbarlogo.png" title="Home" alt="" />
-                            </a>
-                        </ul>
-                        <ul class="nav" style="float:right;">
+                        <!--<ul class="nav" style="float:left;">-->
+                        <!--    <a class="brand" href="http://preseed.in">-->
+                        <!--        <img src="Nnavbarlogo.png" title="Home" alt="" />-->
+                        <!--    </a>-->
+                        <!--</ul>-->
+                        <ul class="nav mobile" style="float:right;">
 
                             <li class=""><a href="http://preseed.in/">Home</a>
                             </li>
