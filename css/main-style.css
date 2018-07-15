@@ -33,3 +33,11 @@
     display: block !important;
     margin: 0 auto !important;
 }
+@media (max-width: 767px) {
+    ul.nav.mobile {
+
+        width: unset !important;
+        float : unset !important;
+
+    }
+}
