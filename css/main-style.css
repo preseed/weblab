@@ -44,6 +44,9 @@
         position: relative !important;
         padding-top: 15px !important;
     }
+    #above_logo_text {
+        font-size: 2em;
+    }
 }
 .sm-links {
   padding: 10px;
